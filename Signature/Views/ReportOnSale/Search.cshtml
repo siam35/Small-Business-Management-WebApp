@@ -1,0 +1,112 @@
+﻿@model Signature.Models.ReportOnSaleViewModel
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@*<!DOCTYPE html>
+    <html>
+    <head>
+        <meta name="viewport" content="width=device-width" />
+        <title>Add</title>
+        <style>
+            table {
+                font-family: arial, sans-serif;
+                border-collapse: collapse;
+                width: 100%;
+            }
+
+            td, th {
+                border: 1px solid #dddddd;
+                text-align: left;
+                padding: 8px;
+            }
+
+            tr:nth-child(even) {
+                background-color: #dddddd;
+            }
+        </style>
+    </head>
+    <body>*@
+
+@section MyStyle
+{
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    </style>
+
+}
+<div class="container-fluid">
+    <form method="post">
+        <div class="row">
+            <div class="col-md-6">
+                <label>Start Date:</label>
+                <input type="date" id="StartDate" name="StartDate" />
+            </div>
+            <div class="col-md-6">
+                <label>End Date:</label>
+                <input type="date" id="EndDate" name="EndDate" />
+                <br />
+                <input type="submit" id="Search" value="Search" />
+            </div>
+        </div>
+        <div class="row">
+            <table>
+                <thead>
+                    <tr>
+                        <th>SL</th>
+                        <th>Code</th>
+                        <th>Name</th>
+                        <th>Category</th>
+                        <th>SoldQty</th>
+                        <th>CP</th>
+                        <th>SalesPrice</th>
+                        <th>Profit</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    @{int sl = 1;}
+
+                    @foreach (var RS in Model.ReportOnSaleViewModels)
+                    {
+                        <tr>
+                            <td>@(sl++)</td>
+                            <td>@RS.Code</td>
+                            <td>@RS.Name</td>
+                            <td>@RS.Category</td>
+                            <td>@RS.SoldQty</td>
+                            <td>@(RS.CP*RS.SoldQty)</td>
+                            <td>@(RS.SalesPrice*RS.SoldQty)</td>
+                            <td>@(RS.SalesPrice * RS.SoldQty- RS.CP * RS.SoldQty)</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+
+        </div>
+    </form>
+
+</div>
+
+@*</body>*@
+
+@section MyScript
+{
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+}
+
+@*</html>*@

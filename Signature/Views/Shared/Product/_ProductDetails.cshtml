@@ -1,0 +1,35 @@
+﻿@model Signature.Models.ProductViewModel
+
+@*For View*@
+<table>
+    <tr>
+        <td>Sl</td>
+        <td>Category</td>
+        <td>Code</td>
+        <td>Name</td>
+        <td>ReorderLevel</td>
+        <td>Description</td>
+        <td>Edit</td>
+
+    </tr>
+
+    @{int i = 1;}
+    @foreach (var product in Model.Products)
+    {
+    <tr>
+        <td>@(i++)</td>
+        <td>@product.Category.Name</td>
+        <td>@product.Code</td>
+        <td>@product.Name</td>
+        <td>@product.ReorderLevel</td>
+        <td>@product.Description</td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", "Product", new { Id = product.Id }, new { @target = "_blank", @class = "btn btn-success btn-default btn-sm" })
+        </td>
+        @*<td>
+            @Html.ActionLink("Delete", "Delete", "Product", new { Id = product.Id }, new { @class = "btn btn-danger btn-sm" })
+        </td>*@
+    </tr>
+    }
+</table>
+

@@ -1,0 +1,61 @@
+﻿@model Signature.Models.PurchaseViewModel
+@{
+    ViewBag.Title = "Show";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section MyStyle
+{
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    </style>
+}
+
+<h2>Show</h2>
+
+<form method="post">
+    <table>
+        <tr>
+            Search:
+            <td><input type="date" name="StartDateTime" required /></td>
+            <td><input type="date" name="EndDateTime" required /></td>
+            <td><input type="submit" value="Search" /></td>
+        </tr>
+    </table>
+
+</form>
+<table>
+    <tr>
+        <td>Sl</td>
+        <td>Supplier</td>
+        <td>Bill</td>
+        <td>Date</td>
+        <td>Details</td>
+    </tr>
+
+    @{int i = 1;}
+    @foreach (var purchases in Model.Purchaseses)
+    {
+    <tr>
+        <td>@(i++)</td>
+        <td>@purchases.Supplier.Name</td>
+        <td>@purchases.Bill</td>
+        <td>@purchases.Date</td>
+        <td>@Html.ActionLink("Details", "ShowPurchaseDetails", "Purchase", new { id = purchases.Id }, new { @target = "_blank", @class = "btn btn-success btn-default btn-sm" })</td>
+    </tr>
+    }
+</table>

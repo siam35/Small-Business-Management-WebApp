@@ -1,0 +1,159 @@
+﻿@model Signature.Models.ProductViewModel
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Edit</h2>
+
+@section MyStyle
+{
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    </style>
+}
+
+<div>
+    <a href="../Search">Search Product</a>
+    <a href="../Add">Add Product</a>
+    <form method="post">
+        <table>
+
+            <tr>
+                <td>@Html.LabelFor(c => c.CategoryId)</td>
+                <td>@Html.DropDownListFor(c => c.CategoryId, Model.CategorySelectListItems, "--Select--")</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>@Html.LabelFor(c => c.Code)</td>
+                @*<td>@Html.TextBoxFor(c => c.Code, Model.Code)</td>*@
+                <td><input type="text" name="Code" id="Code" value="@Model.Code" required maxlength="4" minlength="4"/>
+                    <p id="codefeedback"></p></td>
+                <td>@Html.ValidationMessageFor(c => c.Code)</td>
+            </tr>
+            <tr>
+                <td>@Html.LabelFor(c => c.Name)</td>
+                @*<td>@Html.TextBoxFor(c => c.Name, Model.Name)</td>*@
+                <td><input type="text" name="Name" id="Name" value="@Model.Name" required/>
+                    <p id="namefeedback"></p></td>
+                <td>@Html.ValidationMessageFor(c => c.Name)</td>
+                <p><input type="hidden" name="Id" id="Id" value="@Model.Id" required/></p>
+            </tr>
+            <tr>
+                <td>@Html.LabelFor(c => c.ReorderLevel)</td>
+                @*<td>@Html.TextBoxFor(c => c.ReorderLevel, Model.ReorderLevel)</td>*@
+                <td><input type="text" name="ReorderLevel" id="ReorderLevel" min="0" value="@Model.ReorderLevel" required/></td>
+                <td>@Html.ValidationMessageFor(c => c.ReorderLevel)</td>
+            </tr>
+            <tr>
+                <td>@Html.LabelFor(c => c.Description)</td>
+                <td>@Html.TextBoxFor(c => c.Description, Model.Description)</td>
+                <td>@Html.ValidationMessageFor(c => c.Description)</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" value="Update"/></td>
+                <td>
+                    @if (ViewBag.Message != null)
+                    {
+                        <h3>
+                            <b>
+                                @ViewBag.Message
+                            </b>
+                        </h3>
+                    }
+                </td>
+            </tr>
+        </table>
+
+        @*For View*@
+        @{
+            Html.RenderPartial("~/Views/Shared/Product/_ProductDetails.cshtml", Model);
+        }
+
+    </form>
+</div>
+
+@section MyScript
+{
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/jquery.validate.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+
+
+
+    <script>
+
+
+
+
+        $(document).ready(function () {
+
+            $("#Code").focusout(function () {
+                var code = $("#Code").val();
+                var id = $("#Id").val();
+                var jsonRequestData = { code: code, id: id }
+                $.ajax({
+                    url: "/Product/IsCodeExistforEdit",
+                    type: "POST",
+                    data: jsonRequestData,
+                    success: function (data) {
+                        if (data === true) {
+                            //alert("Bill exist");
+                            $("#codefeedback").html("This Code already Exist");
+                            $("#Code").val(null);
+                        } else {
+                            //  alert("Not Exist");
+                            $("#codefeedback").html("");
+                        }
+
+                    },
+                    error: function () {
+                        alert("Ajax failed");
+                    }
+                });
+            });
+
+            $("#Name").focusout(function () {
+                var name = $("#Name").val();
+                var id = $("#Id").val();
+                var jsonRequestData = { name: name, id: id }
+                $.ajax({
+                    url: "/Product/IsNameExistforEdit",
+                    type: "POST",
+                    data: jsonRequestData,
+                    success: function (data) {
+                        if (data === true) {
+                            //alert("Bill exist");
+                            $("#namefeedback").html("This Name already Exist");
+                            $("#Name").val(null);
+                        } else {
+                            //  alert("Not Exist");
+                            $("#namefeedback").html("");
+                        }
+
+                    },
+                    error: function () {
+                        alert("Ajax failed");
+                    }
+                });
+            });
+        });
+    </script>
+}
+
+@*</body>
+    </html>*@

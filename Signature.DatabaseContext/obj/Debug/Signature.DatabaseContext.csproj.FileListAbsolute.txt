@@ -1,0 +1,185 @@
+A:\Project\Signature\Signature.DatabaseContext\bin\Debug\Signature.DatabaseContext.dll.config
+A:\Project\Signature\Signature.DatabaseContext\bin\Debug\Signature.DatabaseContext.dll
+A:\Project\Signature\Signature.DatabaseContext\bin\Debug\Signature.DatabaseContext.pdb
+A:\Project\Signature\Signature.DatabaseContext\bin\Debug\EntityFramework.dll
+A:\Project\Signature\Signature.DatabaseContext\bin\Debug\EntityFramework.SqlServer.dll
+A:\Project\Signature\Signature.DatabaseContext\bin\Debug\Signature.Model.dll
+A:\Project\Signature\Signature.DatabaseContext\bin\Debug\Signature.Model.pdb
+A:\Project\Signature\Signature.DatabaseContext\bin\Debug\EntityFramework.xml
+A:\Project\Signature\Signature.DatabaseContext\bin\Debug\EntityFramework.SqlServer.xml
+A:\Project\Signature\Signature.DatabaseContext\obj\Debug\Signature.DatabaseContext.csprojAssemblyReference.cache
+A:\Project\Signature\Signature.DatabaseContext\obj\Debug\Signature.DatabaseContext.csproj.CoreCompileInputs.cache
+A:\Project\Signature\Signature.DatabaseContext\obj\Debug\Signature.DatabaseContext.csproj.CopyComplete
+A:\Project\Signature\Signature.DatabaseContext\obj\Debug\Signature.DatabaseContext.dll
+A:\Project\Signature\Signature.DatabaseContext\obj\Debug\Signature.DatabaseContext.pdb
+A:\Project_A\Signature\Signature.DatabaseContext\bin\Debug\Signature.DatabaseContext.dll.config
+A:\Project_A\Signature\Signature.DatabaseContext\bin\Debug\Signature.DatabaseContext.dll
+A:\Project_A\Signature\Signature.DatabaseContext\bin\Debug\Signature.DatabaseContext.pdb
+A:\Project_A\Signature\Signature.DatabaseContext\bin\Debug\EntityFramework.dll
+A:\Project_A\Signature\Signature.DatabaseContext\bin\Debug\EntityFramework.SqlServer.dll
+A:\Project_A\Signature\Signature.DatabaseContext\bin\Debug\Signature.Model.dll
+A:\Project_A\Signature\Signature.DatabaseContext\bin\Debug\Signature.Model.pdb
+A:\Project_A\Signature\Signature.DatabaseContext\bin\Debug\EntityFramework.xml
+A:\Project_A\Signature\Signature.DatabaseContext\bin\Debug\EntityFramework.SqlServer.xml
+A:\Project_A\Signature\Signature.DatabaseContext\obj\Debug\Signature.DatabaseContext.csprojAssemblyReference.cache
+A:\Project_A\Signature\Signature.DatabaseContext\obj\Debug\Signature.DatabaseContext.csproj.CoreCompileInputs.cache
+A:\Project_A\Signature\Signature.DatabaseContext\obj\Debug\Signature.DatabaseContext.csproj.CopyComplete
+A:\Project_A\Signature\Signature.DatabaseContext\obj\Debug\Signature.DatabaseContext.dll
+A:\Project_A\Signature\Signature.DatabaseContext\obj\Debug\Signature.DatabaseContext.pdb
+A:\Merged\Project_A\Signature\Signature.DatabaseContext\bin\Debug\Signature.DatabaseContext.dll.config
+A:\Merged\Project_A\Signature\Signature.DatabaseContext\bin\Debug\Signature.DatabaseContext.dll
+A:\Merged\Project_A\Signature\Signature.DatabaseContext\bin\Debug\Signature.DatabaseContext.pdb
+A:\Merged\Project_A\Signature\Signature.DatabaseContext\bin\Debug\EntityFramework.dll
+A:\Merged\Project_A\Signature\Signature.DatabaseContext\bin\Debug\EntityFramework.SqlServer.dll
+A:\Merged\Project_A\Signature\Signature.DatabaseContext\bin\Debug\Signature.Model.dll
+A:\Merged\Project_A\Signature\Signature.DatabaseContext\bin\Debug\Signature.Model.pdb
+A:\Merged\Project_A\Signature\Signature.DatabaseContext\bin\Debug\EntityFramework.xml
+A:\Merged\Project_A\Signature\Signature.DatabaseContext\bin\Debug\EntityFramework.SqlServer.xml
+A:\Merged\Project_A\Signature\Signature.DatabaseContext\obj\Debug\Signature.DatabaseContext.csprojAssemblyReference.cache
+A:\Merged\Project_A\Signature\Signature.DatabaseContext\obj\Debug\Signature.DatabaseContext.csproj.CoreCompileInputs.cache
+A:\Merged\Project_A\Signature\Signature.DatabaseContext\obj\Debug\Signature.DatabaseContext.csproj.CopyComplete
+A:\Merged\Project_A\Signature\Signature.DatabaseContext\obj\Debug\Signature.DatabaseContext.dll
+A:\Merged\Project_A\Signature\Signature.DatabaseContext\obj\Debug\Signature.DatabaseContext.pdb
+A:\Merged\Project_A\Signature\Signature.DatabaseContext\obj\Debug\Signature.DatabaseContext.Migrations.ProductModelUpdated.resources
+A:\Merged\Project_A\Signature\Signature.DatabaseContext\obj\Debug\Signature.DatabaseContext.csproj.GenerateResource.cache
+F:\Merged\Project_A\Signature\Signature.DatabaseContext\bin\Debug\Signature.DatabaseContext.dll.config
+F:\Merged\Project_A\Signature\Signature.DatabaseContext\bin\Debug\Signature.DatabaseContext.dll
+F:\Merged\Project_A\Signature\Signature.DatabaseContext\bin\Debug\Signature.DatabaseContext.pdb
+F:\Merged\Project_A\Signature\Signature.DatabaseContext\bin\Debug\EntityFramework.dll
+F:\Merged\Project_A\Signature\Signature.DatabaseContext\bin\Debug\EntityFramework.SqlServer.dll
+F:\Merged\Project_A\Signature\Signature.DatabaseContext\bin\Debug\Signature.Model.dll
+F:\Merged\Project_A\Signature\Signature.DatabaseContext\bin\Debug\Signature.Model.pdb
+F:\Merged\Project_A\Signature\Signature.DatabaseContext\bin\Debug\EntityFramework.xml
+F:\Merged\Project_A\Signature\Signature.DatabaseContext\bin\Debug\EntityFramework.SqlServer.xml
+F:\Merged\Project_A\Signature\Signature.DatabaseContext\obj\Debug\Signature.DatabaseContext.csprojAssemblyReference.cache
+F:\Merged\Project_A\Signature\Signature.DatabaseContext\obj\Debug\Signature.DatabaseContext.Migrations.ProductModelUpdated.resources
+F:\Merged\Project_A\Signature\Signature.DatabaseContext\obj\Debug\Signature.DatabaseContext.csproj.GenerateResource.cache
+F:\Merged\Project_A\Signature\Signature.DatabaseContext\obj\Debug\Signature.DatabaseContext.csproj.CoreCompileInputs.cache
+F:\Merged\Project_A\Signature\Signature.DatabaseContext\obj\Debug\Signature.DatabaseContext.csproj.CopyComplete
+F:\Merged\Project_A\Signature\Signature.DatabaseContext\obj\Debug\Signature.DatabaseContext.dll
+F:\Merged\Project_A\Signature\Signature.DatabaseContext\obj\Debug\Signature.DatabaseContext.pdb
+F:\Merged\Project_A\Signature\Signature.DatabaseContext\obj\Debug\Signature.DatabaseContext.Migrations.SalesTablesAdded.resources
+F:\Merged\Project_A\Signature\Signature.DatabaseContext\obj\Debug\Signature.DatabaseContext.Migrations.DateColumnAdded.resources
+F:\Merged\Project_A\Signature\Signature.DatabaseContext\obj\Debug\Signature.DatabaseContext.Migrations.ForeignKeydeleted.resources
+F:\Merged\Project_A\Signature\Signature.DatabaseContext\obj\Debug\Signature.DatabaseContext.Migrations.AddMigrationDateAddedToSales.resources
+F:\Merged\Project_A\Signature\Signature.DatabaseContext\obj\Debug\Signature.DatabaseContext.Migrations.Columntypechange.resources
+F:\Merged\Project_A\Signature\Signature.DatabaseContext\obj\Debug\Signature.DatabaseContext.Migrations.AddMigrationm.resources
+F:\Merged\Project_A\Signature\Signature.DatabaseContext\obj\Debug\Signature.DatabaseContext.Migrations.CustomerFK.resources
+F:\Merged\Project_A\Signature\Signature.DatabaseContext\obj\Debug\Signature.DatabaseContext.Migrations.ProductFKAdded.resources
+F:\Merged\Project_A\Signature\Signature.DatabaseContext\obj\Debug\Signature.DatabaseContext.Migrations.fkdeletedproduct.resources
+F:\Merged\Project_A\Signature\Signature.DatabaseContext\obj\Debug\Signature.DatabaseContext.Migrations.typechanged.resources
+F:\Merged\Project_A\Signature\Signature.DatabaseContext\obj\Debug\Signature.DatabaseContext.Migrations.ProductFKAdded1.resources
+C:\Users\Arafat\Downloads\Compressed\siam vai Project\Signature\Signature.DatabaseContext\bin\Debug\Signature.DatabaseContext.dll.config
+C:\Users\Arafat\Downloads\Compressed\siam vai Project\Signature\Signature.DatabaseContext\bin\Debug\Signature.DatabaseContext.dll
+C:\Users\Arafat\Downloads\Compressed\siam vai Project\Signature\Signature.DatabaseContext\bin\Debug\Signature.DatabaseContext.pdb
+C:\Users\Arafat\Downloads\Compressed\siam vai Project\Signature\Signature.DatabaseContext\bin\Debug\EntityFramework.dll
+C:\Users\Arafat\Downloads\Compressed\siam vai Project\Signature\Signature.DatabaseContext\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Arafat\Downloads\Compressed\siam vai Project\Signature\Signature.DatabaseContext\bin\Debug\Signature.Model.dll
+C:\Users\Arafat\Downloads\Compressed\siam vai Project\Signature\Signature.DatabaseContext\bin\Debug\Signature.Model.pdb
+C:\Users\Arafat\Downloads\Compressed\siam vai Project\Signature\Signature.DatabaseContext\bin\Debug\EntityFramework.xml
+C:\Users\Arafat\Downloads\Compressed\siam vai Project\Signature\Signature.DatabaseContext\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Arafat\Downloads\Compressed\siam vai Project\Signature\Signature.DatabaseContext\obj\Debug\Signature.DatabaseContext.csprojAssemblyReference.cache
+C:\Users\Arafat\Downloads\Compressed\siam vai Project\Signature\Signature.DatabaseContext\obj\Debug\Signature.DatabaseContext.Migrations.ProductModelUpdated.resources
+C:\Users\Arafat\Downloads\Compressed\siam vai Project\Signature\Signature.DatabaseContext\obj\Debug\Signature.DatabaseContext.Migrations.SalesTablesAdded.resources
+C:\Users\Arafat\Downloads\Compressed\siam vai Project\Signature\Signature.DatabaseContext\obj\Debug\Signature.DatabaseContext.Migrations.DateColumnAdded.resources
+C:\Users\Arafat\Downloads\Compressed\siam vai Project\Signature\Signature.DatabaseContext\obj\Debug\Signature.DatabaseContext.Migrations.ForeignKeydeleted.resources
+C:\Users\Arafat\Downloads\Compressed\siam vai Project\Signature\Signature.DatabaseContext\obj\Debug\Signature.DatabaseContext.Migrations.AddMigrationDateAddedToSales.resources
+C:\Users\Arafat\Downloads\Compressed\siam vai Project\Signature\Signature.DatabaseContext\obj\Debug\Signature.DatabaseContext.Migrations.Columntypechange.resources
+C:\Users\Arafat\Downloads\Compressed\siam vai Project\Signature\Signature.DatabaseContext\obj\Debug\Signature.DatabaseContext.Migrations.AddMigrationm.resources
+C:\Users\Arafat\Downloads\Compressed\siam vai Project\Signature\Signature.DatabaseContext\obj\Debug\Signature.DatabaseContext.Migrations.CustomerFK.resources
+C:\Users\Arafat\Downloads\Compressed\siam vai Project\Signature\Signature.DatabaseContext\obj\Debug\Signature.DatabaseContext.Migrations.ProductFKAdded.resources
+C:\Users\Arafat\Downloads\Compressed\siam vai Project\Signature\Signature.DatabaseContext\obj\Debug\Signature.DatabaseContext.Migrations.fkdeletedproduct.resources
+C:\Users\Arafat\Downloads\Compressed\siam vai Project\Signature\Signature.DatabaseContext\obj\Debug\Signature.DatabaseContext.Migrations.typechanged.resources
+C:\Users\Arafat\Downloads\Compressed\siam vai Project\Signature\Signature.DatabaseContext\obj\Debug\Signature.DatabaseContext.Migrations.ProductFKAdded1.resources
+C:\Users\Arafat\Downloads\Compressed\siam vai Project\Signature\Signature.DatabaseContext\obj\Debug\Signature.DatabaseContext.csproj.GenerateResource.cache
+C:\Users\Arafat\Downloads\Compressed\siam vai Project\Signature\Signature.DatabaseContext\obj\Debug\Signature.DatabaseContext.csproj.CoreCompileInputs.cache
+C:\Users\Arafat\Downloads\Compressed\siam vai Project\Signature\Signature.DatabaseContext\obj\Debug\Signature.DatabaseContext.csproj.CopyComplete
+C:\Users\Arafat\Downloads\Compressed\siam vai Project\Signature\Signature.DatabaseContext\obj\Debug\Signature.DatabaseContext.dll
+C:\Users\Arafat\Downloads\Compressed\siam vai Project\Signature\Signature.DatabaseContext\obj\Debug\Signature.DatabaseContext.pdb
+C:\Users\Arafat\Downloads\Compressed\siam vai Project\Signature\Signature.DatabaseContext\obj\Debug\Signature.DatabaseContext.Migrations.Sale.resources
+C:\Users\Arafat\Downloads\Compressed\siam vai Project\Signature\Signature.DatabaseContext\obj\Debug\Signature.DatabaseContext.Migrations.Purchase.resources
+C:\Users\Arafat\Downloads\Compressed\siam vai Project\Signature\Signature.DatabaseContext\obj\Debug\Signature.DatabaseContext.Migrations.PurchaseDetailsUpdated.resources
+G:\Arafat CoffeeShop (Day-10)\Signature\Signature.DatabaseContext\bin\Debug\Signature.DatabaseContext.dll.config
+G:\Arafat CoffeeShop (Day-10)\Signature\Signature.DatabaseContext\bin\Debug\Signature.DatabaseContext.dll
+G:\Arafat CoffeeShop (Day-10)\Signature\Signature.DatabaseContext\bin\Debug\Signature.DatabaseContext.pdb
+G:\Arafat CoffeeShop (Day-10)\Signature\Signature.DatabaseContext\bin\Debug\EntityFramework.dll
+G:\Arafat CoffeeShop (Day-10)\Signature\Signature.DatabaseContext\bin\Debug\EntityFramework.SqlServer.dll
+G:\Arafat CoffeeShop (Day-10)\Signature\Signature.DatabaseContext\bin\Debug\Signature.Model.dll
+G:\Arafat CoffeeShop (Day-10)\Signature\Signature.DatabaseContext\bin\Debug\Signature.Model.pdb
+G:\Arafat CoffeeShop (Day-10)\Signature\Signature.DatabaseContext\bin\Debug\EntityFramework.xml
+G:\Arafat CoffeeShop (Day-10)\Signature\Signature.DatabaseContext\bin\Debug\EntityFramework.SqlServer.xml
+G:\Arafat CoffeeShop (Day-10)\Signature\Signature.DatabaseContext\obj\Debug\Signature.DatabaseContext.csprojAssemblyReference.cache
+G:\Arafat CoffeeShop (Day-10)\Signature\Signature.DatabaseContext\obj\Debug\Signature.DatabaseContext.csproj.CoreCompileInputs.cache
+G:\Arafat CoffeeShop (Day-10)\Signature\Signature.DatabaseContext\obj\Debug\Signature.DatabaseContext.csproj.CopyComplete
+G:\Arafat CoffeeShop (Day-10)\Signature\Signature.DatabaseContext\obj\Debug\Signature.DatabaseContext.dll
+G:\Arafat CoffeeShop (Day-10)\Signature\Signature.DatabaseContext\obj\Debug\Signature.DatabaseContext.pdb
+G:\Arafat CoffeeShop (Day-10)\Signature\Signature.DatabaseContext\obj\Debug\Signature.DatabaseContext.Migrations.InitialCreate.resources
+G:\Arafat CoffeeShop (Day-10)\Signature\Signature.DatabaseContext\obj\Debug\Signature.DatabaseContext.csproj.GenerateResource.cache
+G:\Arafat CoffeeShop (Day-10)\Signature\Signature.DatabaseContext\obj\Debug\Signature.DatabaseContext.Migrations.DbUpdated.resources
+G:\Arafat CoffeeShop (Day-10)\Signature\Signature.DatabaseContext\obj\Debug\Signature.DatabaseContext.Migrations.DBUpdatedd.resources
+G:\Arafat CoffeeShop (Day-10)\Signature\Signature.DatabaseContext\obj\Debug\Signature.DatabaseContext.Migrations.PurchaseAndDetailsAdded.resources
+G:\Arafat CoffeeShop (Day-10)\Signature\Signature.DatabaseContext\obj\Debug\Signature.DatabaseContext.Migrations.PurchaseAndDetailsAddedFK.resources
+G:\Arafat CoffeeShop (Day-10)\Signature\Signature.DatabaseContext\obj\Debug\Signature.DatabaseContext.Migrations.DatabaseUpdateTotal.resources
+F:\BITM Full Final (05-12-2019)\Al Modules\Signature\Signature.DatabaseContext\bin\Debug\Signature.DatabaseContext.dll.config
+F:\BITM Full Final (05-12-2019)\Al Modules\Signature\Signature.DatabaseContext\bin\Debug\Signature.DatabaseContext.dll
+F:\BITM Full Final (05-12-2019)\Al Modules\Signature\Signature.DatabaseContext\bin\Debug\Signature.DatabaseContext.pdb
+F:\BITM Full Final (05-12-2019)\Al Modules\Signature\Signature.DatabaseContext\bin\Debug\EntityFramework.dll
+F:\BITM Full Final (05-12-2019)\Al Modules\Signature\Signature.DatabaseContext\bin\Debug\EntityFramework.SqlServer.dll
+F:\BITM Full Final (05-12-2019)\Al Modules\Signature\Signature.DatabaseContext\bin\Debug\Signature.Model.dll
+F:\BITM Full Final (05-12-2019)\Al Modules\Signature\Signature.DatabaseContext\bin\Debug\Signature.Model.pdb
+F:\BITM Full Final (05-12-2019)\Al Modules\Signature\Signature.DatabaseContext\bin\Debug\EntityFramework.xml
+F:\BITM Full Final (05-12-2019)\Al Modules\Signature\Signature.DatabaseContext\bin\Debug\EntityFramework.SqlServer.xml
+F:\BITM Full Final (05-12-2019)\Al Modules\Signature\Signature.DatabaseContext\obj\Debug\Signature.DatabaseContext.csprojAssemblyReference.cache
+F:\BITM Full Final (05-12-2019)\Al Modules\Signature\Signature.DatabaseContext\obj\Debug\Signature.DatabaseContext.Migrations.InitialCreate.resources
+F:\BITM Full Final (05-12-2019)\Al Modules\Signature\Signature.DatabaseContext\obj\Debug\Signature.DatabaseContext.Migrations.DbUpdated.resources
+F:\BITM Full Final (05-12-2019)\Al Modules\Signature\Signature.DatabaseContext\obj\Debug\Signature.DatabaseContext.Migrations.DBUpdatedd.resources
+F:\BITM Full Final (05-12-2019)\Al Modules\Signature\Signature.DatabaseContext\obj\Debug\Signature.DatabaseContext.Migrations.PurchaseAndDetailsAdded.resources
+F:\BITM Full Final (05-12-2019)\Al Modules\Signature\Signature.DatabaseContext\obj\Debug\Signature.DatabaseContext.Migrations.PurchaseAndDetailsAddedFK.resources
+F:\BITM Full Final (05-12-2019)\Al Modules\Signature\Signature.DatabaseContext\obj\Debug\Signature.DatabaseContext.Migrations.DatabaseUpdateTotal.resources
+F:\BITM Full Final (05-12-2019)\Al Modules\Signature\Signature.DatabaseContext\obj\Debug\Signature.DatabaseContext.csproj.GenerateResource.cache
+F:\BITM Full Final (05-12-2019)\Al Modules\Signature\Signature.DatabaseContext\obj\Debug\Signature.DatabaseContext.csproj.CoreCompileInputs.cache
+F:\BITM Full Final (05-12-2019)\Al Modules\Signature\Signature.DatabaseContext\obj\Debug\Signature.DatabaseContext.csproj.CopyComplete
+F:\BITM Full Final (05-12-2019)\Al Modules\Signature\Signature.DatabaseContext\obj\Debug\Signature.DatabaseContext.dll
+F:\BITM Full Final (05-12-2019)\Al Modules\Signature\Signature.DatabaseContext\obj\Debug\Signature.DatabaseContext.pdb
+E:\BITM Full Final (05-12-2019)\Al Modules\Signature\Signature.DatabaseContext\bin\Debug\Signature.DatabaseContext.dll.config
+E:\BITM Full Final (05-12-2019)\Al Modules\Signature\Signature.DatabaseContext\bin\Debug\Signature.DatabaseContext.dll
+E:\BITM Full Final (05-12-2019)\Al Modules\Signature\Signature.DatabaseContext\bin\Debug\Signature.DatabaseContext.pdb
+E:\BITM Full Final (05-12-2019)\Al Modules\Signature\Signature.DatabaseContext\bin\Debug\EntityFramework.dll
+E:\BITM Full Final (05-12-2019)\Al Modules\Signature\Signature.DatabaseContext\bin\Debug\EntityFramework.SqlServer.dll
+E:\BITM Full Final (05-12-2019)\Al Modules\Signature\Signature.DatabaseContext\bin\Debug\Signature.Model.dll
+E:\BITM Full Final (05-12-2019)\Al Modules\Signature\Signature.DatabaseContext\bin\Debug\Signature.Model.pdb
+E:\BITM Full Final (05-12-2019)\Al Modules\Signature\Signature.DatabaseContext\bin\Debug\EntityFramework.xml
+E:\BITM Full Final (05-12-2019)\Al Modules\Signature\Signature.DatabaseContext\bin\Debug\EntityFramework.SqlServer.xml
+E:\BITM Full Final (05-12-2019)\Al Modules\Signature\Signature.DatabaseContext\obj\Debug\Signature.DatabaseContext.csprojAssemblyReference.cache
+E:\BITM Full Final (05-12-2019)\Al Modules\Signature\Signature.DatabaseContext\obj\Debug\Signature.DatabaseContext.Migrations.InitialCreate.resources
+E:\BITM Full Final (05-12-2019)\Al Modules\Signature\Signature.DatabaseContext\obj\Debug\Signature.DatabaseContext.Migrations.DbUpdated.resources
+E:\BITM Full Final (05-12-2019)\Al Modules\Signature\Signature.DatabaseContext\obj\Debug\Signature.DatabaseContext.Migrations.DBUpdatedd.resources
+E:\BITM Full Final (05-12-2019)\Al Modules\Signature\Signature.DatabaseContext\obj\Debug\Signature.DatabaseContext.Migrations.PurchaseAndDetailsAdded.resources
+E:\BITM Full Final (05-12-2019)\Al Modules\Signature\Signature.DatabaseContext\obj\Debug\Signature.DatabaseContext.Migrations.PurchaseAndDetailsAddedFK.resources
+E:\BITM Full Final (05-12-2019)\Al Modules\Signature\Signature.DatabaseContext\obj\Debug\Signature.DatabaseContext.Migrations.DatabaseUpdateTotal.resources
+E:\BITM Full Final (05-12-2019)\Al Modules\Signature\Signature.DatabaseContext\obj\Debug\Signature.DatabaseContext.csproj.GenerateResource.cache
+E:\BITM Full Final (05-12-2019)\Al Modules\Signature\Signature.DatabaseContext\obj\Debug\Signature.DatabaseContext.csproj.CoreCompileInputs.cache
+E:\BITM Full Final (05-12-2019)\Al Modules\Signature\Signature.DatabaseContext\obj\Debug\Signature.DatabaseContext.csproj.CopyComplete
+E:\BITM Full Final (05-12-2019)\Al Modules\Signature\Signature.DatabaseContext\obj\Debug\Signature.DatabaseContext.dll
+E:\BITM Full Final (05-12-2019)\Al Modules\Signature\Signature.DatabaseContext\obj\Debug\Signature.DatabaseContext.pdb
+E:\Final Project (Total Modules)\BITM Full Final (10-12-2019)\Al Modules\Signature\Signature.DatabaseContext\bin\Debug\Signature.DatabaseContext.dll.config
+E:\Final Project (Total Modules)\BITM Full Final (10-12-2019)\Al Modules\Signature\Signature.DatabaseContext\bin\Debug\Signature.DatabaseContext.dll
+E:\Final Project (Total Modules)\BITM Full Final (10-12-2019)\Al Modules\Signature\Signature.DatabaseContext\bin\Debug\Signature.DatabaseContext.pdb
+E:\Final Project (Total Modules)\BITM Full Final (10-12-2019)\Al Modules\Signature\Signature.DatabaseContext\bin\Debug\EntityFramework.dll
+E:\Final Project (Total Modules)\BITM Full Final (10-12-2019)\Al Modules\Signature\Signature.DatabaseContext\bin\Debug\EntityFramework.SqlServer.dll
+E:\Final Project (Total Modules)\BITM Full Final (10-12-2019)\Al Modules\Signature\Signature.DatabaseContext\bin\Debug\Signature.Model.dll
+E:\Final Project (Total Modules)\BITM Full Final (10-12-2019)\Al Modules\Signature\Signature.DatabaseContext\bin\Debug\Signature.Model.pdb
+E:\Final Project (Total Modules)\BITM Full Final (10-12-2019)\Al Modules\Signature\Signature.DatabaseContext\bin\Debug\EntityFramework.xml
+E:\Final Project (Total Modules)\BITM Full Final (10-12-2019)\Al Modules\Signature\Signature.DatabaseContext\bin\Debug\EntityFramework.SqlServer.xml
+E:\Final Project (Total Modules)\BITM Full Final (10-12-2019)\Al Modules\Signature\Signature.DatabaseContext\obj\Debug\Signature.DatabaseContext.csprojAssemblyReference.cache
+E:\Final Project (Total Modules)\BITM Full Final (10-12-2019)\Al Modules\Signature\Signature.DatabaseContext\obj\Debug\Signature.DatabaseContext.Migrations.InitialCreate.resources
+E:\Final Project (Total Modules)\BITM Full Final (10-12-2019)\Al Modules\Signature\Signature.DatabaseContext\obj\Debug\Signature.DatabaseContext.Migrations.DbUpdated.resources
+E:\Final Project (Total Modules)\BITM Full Final (10-12-2019)\Al Modules\Signature\Signature.DatabaseContext\obj\Debug\Signature.DatabaseContext.Migrations.DBUpdatedd.resources
+E:\Final Project (Total Modules)\BITM Full Final (10-12-2019)\Al Modules\Signature\Signature.DatabaseContext\obj\Debug\Signature.DatabaseContext.Migrations.PurchaseAndDetailsAdded.resources
+E:\Final Project (Total Modules)\BITM Full Final (10-12-2019)\Al Modules\Signature\Signature.DatabaseContext\obj\Debug\Signature.DatabaseContext.Migrations.PurchaseAndDetailsAddedFK.resources
+E:\Final Project (Total Modules)\BITM Full Final (10-12-2019)\Al Modules\Signature\Signature.DatabaseContext\obj\Debug\Signature.DatabaseContext.Migrations.DatabaseUpdateTotal.resources
+E:\Final Project (Total Modules)\BITM Full Final (10-12-2019)\Al Modules\Signature\Signature.DatabaseContext\obj\Debug\Signature.DatabaseContext.csproj.GenerateResource.cache
+E:\Final Project (Total Modules)\BITM Full Final (10-12-2019)\Al Modules\Signature\Signature.DatabaseContext\obj\Debug\Signature.DatabaseContext.csproj.CoreCompileInputs.cache
+E:\Final Project (Total Modules)\BITM Full Final (10-12-2019)\Al Modules\Signature\Signature.DatabaseContext\obj\Debug\Signature.DatabaseContext.csproj.CopyComplete
+E:\Final Project (Total Modules)\BITM Full Final (10-12-2019)\Al Modules\Signature\Signature.DatabaseContext\obj\Debug\Signature.DatabaseContext.dll
+E:\Final Project (Total Modules)\BITM Full Final (10-12-2019)\Al Modules\Signature\Signature.DatabaseContext\obj\Debug\Signature.DatabaseContext.pdb

@@ -1,0 +1,81 @@
+﻿@model Signature.Models.SalesViewModel
+@{
+    ViewBag.Title = "ShowSalesDetails";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section MyStyle
+{
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    </style>
+}
+    <h2>Sales Information</h2>
+<table>
+    <tr>
+        <td>Sl</td>
+        <td>Date</td>
+        <td>Customer</td>
+
+
+    </tr>
+ 
+
+
+    <tr>
+
+        <td>1</td>
+        <td>@Model.SalesDetailses[0].Sales.Date</td>
+        <td>@Model.SalesDetailses[0].Sales.Customer.Name</td>
+        <td></td>
+    </tr>
+        
+</table>
+
+
+
+<h2>Details Information</h2>
+<table>
+    <tr>
+        <td>Sl</td>
+ 
+        <td>Product</td>
+        <td>Category</td>
+        <td>Quantity</td>
+        <td>MRP</td>
+        <td>Total MRP</td>
+
+
+    </tr>
+
+    @{int i = 1;}
+    @foreach (var sales in Model.SalesDetailses)
+    {
+        <tr>
+            <td>@(i++)</td>
+
+            <td>@sales.Product.Name</td>
+            <td>@sales.Product.Category.Name</td>
+            <td>@sales.Quantity</td>
+            <td>@sales.MRP</td>
+            <td>@(sales.Quantity*sales.MRP)</td>
+
+
+
+        </tr>
+    }
+</table>

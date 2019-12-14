@@ -1,0 +1,159 @@
+﻿@model Signature.Models.StockViewModel
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@*<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Add</title>
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    </style>
+</head>
+<body>*@
+
+
+@section MyStyle
+{
+    
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    </style>
+}
+<div class="container-fluid">
+        <form method="post">
+            <div class="row">
+                <div class="col-md-6">
+                    <label>Category:</label>
+                    @*<input type="text" id="Category" />*@
+                    @Html.DropDownList("Category", null, "--Select--", null)
+                    <br />
+                    <label>Start Date:</label>
+                    <input type="date" id="StartDate" name="StartDate" />
+                </div>
+                <div class="col-md-6">
+                    <label>Product:</label>
+                    @*<input type="text" id="Product" />*@
+                    <select id="Product" name="ProductId">
+                        <option>--Select--</option>
+                    </select>
+                    <br />
+                    <label>End Date:</label>
+                    <input type="date" id="EndDate" name="EndDate" />
+                    <br />
+                    <input type="submit" id="Search" value="Search" />
+                </div>
+            </div>
+            <div class="row">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>SL</th>
+                            <th>Code</th>
+                            <th>Name</th>
+                            <th>Category</th>
+                            <th>Reorder Level</th>
+                            <th>Opening Balance</th>
+                            <th>In</th>
+                            <th>Out</th>
+                            <th>Closing Balance</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @{int sl = 1;}
+
+                        @foreach (var stock in Model.StockView)
+                        {
+                            <tr>
+                                <td>@(sl++)</td>
+                                <td>@stock.Code</td>
+                                <td>@stock.Name</td>
+                                <td>@stock.Category</td>
+                                <td>@stock.ReorderLevel</td>
+                                <td>@stock.OpeningBalance</td>
+                                <td>@stock.In</td>
+                                <td>@stock.Out</td>
+                                <td>@stock.ClosingBalance</td>
+
+                            </tr>
+                        }
+
+
+                    </tbody>
+                </table>
+
+            </div>
+        </form>
+
+    </div>
+
+@*</body>*@
+
+
+@section MyScript
+{
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            $("#Category").change(function () {
+                $("#Code").val(null);
+                var categoryId = $("#Category").val();
+                var jsonRequestData = { categoryId: categoryId };
+
+                $.ajax({
+                    url: "/Stock/GetProductByCategoryId",
+                    type: "POST",
+                    data: jsonRequestData,
+                    success: function (products) {
+                        $("#Product").empty();
+                        $("#Product").append('<option>--Select--</option>');
+                        $.each(products, function (key, value) {
+                            //  alert("Id: "+ value.Id + "Name: "+value.Name);
+                            $("#Product").append('<option value="' + value.Id + '">' + value.Name + '</option>');
+                        });
+                    },
+                    error: function () {
+                        alert("Ajax failed");
+                    }
+                });
+            });
+        });
+
+
+    </script>
+    
+}
+
+
+@*</html>*@

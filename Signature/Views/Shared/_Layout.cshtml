@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+    <html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Signature</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="~/Theme/css/styles.min.css">
+
+        @RenderSection("MyStyle", false)
+
+
+    </head>
+    <body style="background-color: #eae2b7">
+        <div>
+            <nav class="navbar navbar-light navbar-expand-md navigation-clean" style="background-color: #f2ed9e;">
+                <div class="container">
+
+                    <a class="navbar-brand" href="#">Signature</a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse"
+                         id="navcol-1">
+                        <ul class="nav navbar-nav ml-auto">
+                            <li class="dropdown">
+                                <a class="dropdown-toggle nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#" style="color: rgb(0, 0, 0);">Menu</a>
+                                <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="../Category/Add">Category</a><a class="dropdown-item" role="presentation" href="../Product/Add">Product</a><a class="dropdown-item" role="presentation" href="../Customer/Add">Customer</a><a class="dropdown-item" role="presentation" href="../Supplier/Add">Supplier</a><a class="dropdown-item" role="presentation" href="../Purchase/Add">Purchase</a><a class="dropdown-item" role="presentation" href="../Sales/Add">Sales</a><a class="dropdown-item" role="presentation" href="../Stock/Search">Stock</a><a class="dropdown-item" role="presentation" href="../ReportOnSale/Search">Report On Sale</a><a class="dropdown-item" role="presentation" href="../ReportOnPurchase/Search">Report On Purchase</a></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <ul class="nav nav-tabs" style="background-color: #f2ea87;">
+                <li class="nav-item" style="color: rgb(0, 0, 0);"><a class="nav-link" href="../Category/Add" style="color: rgb(0, 0, 0); background-color: #f2ea87;">Category</a></li>
+                <li class="nav-item" style="color: rgb(0, 0, 0);"><a class="nav-link" href="../Product/Add" style="color: rgb(0, 0, 0); background-color: #f2ea87;">Product</a></li>
+                <li class="nav-item" style="color: rgb(0, 0, 0);"><a class="nav-link" href="../Customer/Add" style="color: rgb(0, 0, 0); background-color: #f2ea87;">Customer</a></li>
+                <li class="nav-item" style="color: rgb(0, 0, 0);"><a class="nav-link" href="../Supplier/Add" style="color: rgb(0, 0, 0); background-color: #f2ea87">Supplier</a></li>
+                <li class="nav-item" style="color: rgb(0, 0, 0);"><a class="nav-link" href="../Purchase/Add" style="color: rgb(0, 0, 0); background-color: #f2ea87;">Purchase</a></li>
+                <li class="nav-item" style="color: rgb(0, 0, 0);"><a class="nav-link" href="../Sales/Add" style="color: rgb(0, 0, 0);  background-color: #f2ea87">Sales</a></li>
+                <li class="nav-item" style="color: rgb(0, 0, 0);"><a class="nav-link" href="../Stock/Search" style="color: rgb(0, 0, 0); background-color: #f2ea87;;">Stock</a></li>
+                <li class="nav-item" style="color: rgb(0, 0, 0);"><a class="nav-link" href="../ReportOnSale/Search" style="color: rgb(0, 0, 0); background-color: #f2ea87 ">Report On Sale</a></li>
+                <li class="nav-item" style="color: rgb(0, 0, 0);"><a class="nav-link" href="../ReportOnPurchase/Search" style="color: rgb(0, 0, 0); background-color: #f2ea87; ">Report On Purchase</a></li>
+
+            </ul>
+            <div class="container-fluid">
+
+                @RenderBody()
+
+            </div>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+        <script src="~/Theme/js/script.min.js"></script>
+
+        @RenderSection("MyScript", false)
+    </body>
+    </html>

@@ -1,0 +1,153 @@
+A:\Project\Signature\Signature.BLL\bin\Debug\Signature.BLL.dll
+A:\Project\Signature\Signature.BLL\bin\Debug\Signature.BLL.pdb
+A:\Project\Signature\Signature.BLL\bin\Debug\Signature.Model.dll
+A:\Project\Signature\Signature.BLL\bin\Debug\Signature.Repository.dll
+A:\Project\Signature\Signature.BLL\bin\Debug\Signature.DatabaseContext.dll
+A:\Project\Signature\Signature.BLL\bin\Debug\EntityFramework.dll
+A:\Project\Signature\Signature.BLL\bin\Debug\Signature.Model.pdb
+A:\Project\Signature\Signature.BLL\bin\Debug\Signature.Repository.pdb
+A:\Project\Signature\Signature.BLL\bin\Debug\Signature.Repository.dll.config
+A:\Project\Signature\Signature.BLL\bin\Debug\Signature.DatabaseContext.pdb
+A:\Project\Signature\Signature.BLL\bin\Debug\Signature.DatabaseContext.dll.config
+A:\Project\Signature\Signature.BLL\bin\Debug\EntityFramework.xml
+A:\Project\Signature\Signature.BLL\obj\Debug\Signature.BLL.csprojAssemblyReference.cache
+A:\Project\Signature\Signature.BLL\obj\Debug\Signature.BLL.csproj.CoreCompileInputs.cache
+A:\Project\Signature\Signature.BLL\obj\Debug\Signature.BLL.csproj.CopyComplete
+A:\Project\Signature\Signature.BLL\obj\Debug\Signature.BLL.dll
+A:\Project\Signature\Signature.BLL\obj\Debug\Signature.BLL.pdb
+A:\Project_A\Signature\Signature.BLL\bin\Debug\Signature.BLL.dll
+A:\Project_A\Signature\Signature.BLL\bin\Debug\Signature.BLL.pdb
+A:\Project_A\Signature\Signature.BLL\bin\Debug\Signature.Model.dll
+A:\Project_A\Signature\Signature.BLL\bin\Debug\Signature.Repository.dll
+A:\Project_A\Signature\Signature.BLL\bin\Debug\Signature.DatabaseContext.dll
+A:\Project_A\Signature\Signature.BLL\bin\Debug\EntityFramework.dll
+A:\Project_A\Signature\Signature.BLL\bin\Debug\Signature.Model.pdb
+A:\Project_A\Signature\Signature.BLL\bin\Debug\Signature.Repository.pdb
+A:\Project_A\Signature\Signature.BLL\bin\Debug\Signature.Repository.dll.config
+A:\Project_A\Signature\Signature.BLL\bin\Debug\Signature.DatabaseContext.pdb
+A:\Project_A\Signature\Signature.BLL\bin\Debug\Signature.DatabaseContext.dll.config
+A:\Project_A\Signature\Signature.BLL\bin\Debug\EntityFramework.xml
+A:\Project_A\Signature\Signature.BLL\obj\Debug\Signature.BLL.csprojAssemblyReference.cache
+A:\Project_A\Signature\Signature.BLL\obj\Debug\Signature.BLL.csproj.CoreCompileInputs.cache
+A:\Project_A\Signature\Signature.BLL\obj\Debug\Signature.BLL.csproj.CopyComplete
+A:\Project_A\Signature\Signature.BLL\obj\Debug\Signature.BLL.dll
+A:\Project_A\Signature\Signature.BLL\obj\Debug\Signature.BLL.pdb
+A:\Merged\Project_A\Signature\Signature.BLL\bin\Debug\Signature.BLL.dll
+A:\Merged\Project_A\Signature\Signature.BLL\bin\Debug\Signature.BLL.pdb
+A:\Merged\Project_A\Signature\Signature.BLL\bin\Debug\Signature.Model.dll
+A:\Merged\Project_A\Signature\Signature.BLL\bin\Debug\Signature.Repository.dll
+A:\Merged\Project_A\Signature\Signature.BLL\bin\Debug\Signature.DatabaseContext.dll
+A:\Merged\Project_A\Signature\Signature.BLL\bin\Debug\EntityFramework.dll
+A:\Merged\Project_A\Signature\Signature.BLL\bin\Debug\Signature.Model.pdb
+A:\Merged\Project_A\Signature\Signature.BLL\bin\Debug\Signature.Repository.pdb
+A:\Merged\Project_A\Signature\Signature.BLL\bin\Debug\Signature.Repository.dll.config
+A:\Merged\Project_A\Signature\Signature.BLL\bin\Debug\Signature.DatabaseContext.pdb
+A:\Merged\Project_A\Signature\Signature.BLL\bin\Debug\Signature.DatabaseContext.dll.config
+A:\Merged\Project_A\Signature\Signature.BLL\bin\Debug\EntityFramework.xml
+A:\Merged\Project_A\Signature\Signature.BLL\obj\Debug\Signature.BLL.csprojAssemblyReference.cache
+A:\Merged\Project_A\Signature\Signature.BLL\obj\Debug\Signature.BLL.csproj.CoreCompileInputs.cache
+A:\Merged\Project_A\Signature\Signature.BLL\obj\Debug\Signature.BLL.csproj.CopyComplete
+A:\Merged\Project_A\Signature\Signature.BLL\obj\Debug\Signature.BLL.dll
+A:\Merged\Project_A\Signature\Signature.BLL\obj\Debug\Signature.BLL.pdb
+F:\Merged\Project_A\Signature\Signature.BLL\bin\Debug\Signature.BLL.dll
+F:\Merged\Project_A\Signature\Signature.BLL\bin\Debug\Signature.BLL.pdb
+F:\Merged\Project_A\Signature\Signature.BLL\bin\Debug\Signature.Model.dll
+F:\Merged\Project_A\Signature\Signature.BLL\bin\Debug\Signature.Repository.dll
+F:\Merged\Project_A\Signature\Signature.BLL\bin\Debug\Signature.DatabaseContext.dll
+F:\Merged\Project_A\Signature\Signature.BLL\bin\Debug\EntityFramework.dll
+F:\Merged\Project_A\Signature\Signature.BLL\bin\Debug\Signature.Model.pdb
+F:\Merged\Project_A\Signature\Signature.BLL\bin\Debug\Signature.Repository.pdb
+F:\Merged\Project_A\Signature\Signature.BLL\bin\Debug\Signature.Repository.dll.config
+F:\Merged\Project_A\Signature\Signature.BLL\bin\Debug\Signature.DatabaseContext.pdb
+F:\Merged\Project_A\Signature\Signature.BLL\bin\Debug\Signature.DatabaseContext.dll.config
+F:\Merged\Project_A\Signature\Signature.BLL\bin\Debug\EntityFramework.xml
+F:\Merged\Project_A\Signature\Signature.BLL\obj\Debug\Signature.BLL.csprojAssemblyReference.cache
+F:\Merged\Project_A\Signature\Signature.BLL\obj\Debug\Signature.BLL.csproj.CoreCompileInputs.cache
+F:\Merged\Project_A\Signature\Signature.BLL\obj\Debug\Signature.BLL.csproj.CopyComplete
+F:\Merged\Project_A\Signature\Signature.BLL\obj\Debug\Signature.BLL.dll
+F:\Merged\Project_A\Signature\Signature.BLL\obj\Debug\Signature.BLL.pdb
+C:\Users\Arafat\Downloads\Compressed\siam vai Project\Signature\Signature.BLL\bin\Debug\Signature.BLL.dll
+C:\Users\Arafat\Downloads\Compressed\siam vai Project\Signature\Signature.BLL\bin\Debug\Signature.BLL.pdb
+C:\Users\Arafat\Downloads\Compressed\siam vai Project\Signature\Signature.BLL\bin\Debug\Signature.Model.dll
+C:\Users\Arafat\Downloads\Compressed\siam vai Project\Signature\Signature.BLL\bin\Debug\Signature.Repository.dll
+C:\Users\Arafat\Downloads\Compressed\siam vai Project\Signature\Signature.BLL\bin\Debug\Signature.DatabaseContext.dll
+C:\Users\Arafat\Downloads\Compressed\siam vai Project\Signature\Signature.BLL\bin\Debug\EntityFramework.dll
+C:\Users\Arafat\Downloads\Compressed\siam vai Project\Signature\Signature.BLL\bin\Debug\Signature.Model.pdb
+C:\Users\Arafat\Downloads\Compressed\siam vai Project\Signature\Signature.BLL\bin\Debug\Signature.Repository.pdb
+C:\Users\Arafat\Downloads\Compressed\siam vai Project\Signature\Signature.BLL\bin\Debug\Signature.Repository.dll.config
+C:\Users\Arafat\Downloads\Compressed\siam vai Project\Signature\Signature.BLL\bin\Debug\Signature.DatabaseContext.pdb
+C:\Users\Arafat\Downloads\Compressed\siam vai Project\Signature\Signature.BLL\bin\Debug\Signature.DatabaseContext.dll.config
+C:\Users\Arafat\Downloads\Compressed\siam vai Project\Signature\Signature.BLL\bin\Debug\EntityFramework.xml
+C:\Users\Arafat\Downloads\Compressed\siam vai Project\Signature\Signature.BLL\obj\Debug\Signature.BLL.csprojAssemblyReference.cache
+C:\Users\Arafat\Downloads\Compressed\siam vai Project\Signature\Signature.BLL\obj\Debug\Signature.BLL.csproj.CoreCompileInputs.cache
+C:\Users\Arafat\Downloads\Compressed\siam vai Project\Signature\Signature.BLL\obj\Debug\Signature.BLL.csproj.CopyComplete
+C:\Users\Arafat\Downloads\Compressed\siam vai Project\Signature\Signature.BLL\obj\Debug\Signature.BLL.dll
+C:\Users\Arafat\Downloads\Compressed\siam vai Project\Signature\Signature.BLL\obj\Debug\Signature.BLL.pdb
+G:\Arafat CoffeeShop (Day-10)\Signature\Signature.BLL\bin\Debug\Signature.BLL.dll
+G:\Arafat CoffeeShop (Day-10)\Signature\Signature.BLL\bin\Debug\Signature.BLL.pdb
+G:\Arafat CoffeeShop (Day-10)\Signature\Signature.BLL\bin\Debug\Signature.Model.dll
+G:\Arafat CoffeeShop (Day-10)\Signature\Signature.BLL\bin\Debug\Signature.Repository.dll
+G:\Arafat CoffeeShop (Day-10)\Signature\Signature.BLL\bin\Debug\Signature.DatabaseContext.dll
+G:\Arafat CoffeeShop (Day-10)\Signature\Signature.BLL\bin\Debug\EntityFramework.dll
+G:\Arafat CoffeeShop (Day-10)\Signature\Signature.BLL\bin\Debug\Signature.Model.pdb
+G:\Arafat CoffeeShop (Day-10)\Signature\Signature.BLL\bin\Debug\Signature.Repository.pdb
+G:\Arafat CoffeeShop (Day-10)\Signature\Signature.BLL\bin\Debug\Signature.Repository.dll.config
+G:\Arafat CoffeeShop (Day-10)\Signature\Signature.BLL\bin\Debug\Signature.DatabaseContext.pdb
+G:\Arafat CoffeeShop (Day-10)\Signature\Signature.BLL\bin\Debug\Signature.DatabaseContext.dll.config
+G:\Arafat CoffeeShop (Day-10)\Signature\Signature.BLL\bin\Debug\EntityFramework.xml
+G:\Arafat CoffeeShop (Day-10)\Signature\Signature.BLL\obj\Debug\Signature.BLL.csprojAssemblyReference.cache
+G:\Arafat CoffeeShop (Day-10)\Signature\Signature.BLL\obj\Debug\Signature.BLL.csproj.CoreCompileInputs.cache
+G:\Arafat CoffeeShop (Day-10)\Signature\Signature.BLL\obj\Debug\Signature.BLL.csproj.CopyComplete
+G:\Arafat CoffeeShop (Day-10)\Signature\Signature.BLL\obj\Debug\Signature.BLL.dll
+G:\Arafat CoffeeShop (Day-10)\Signature\Signature.BLL\obj\Debug\Signature.BLL.pdb
+F:\BITM Full Final (05-12-2019)\Al Modules\Signature\Signature.BLL\bin\Debug\Signature.BLL.dll
+F:\BITM Full Final (05-12-2019)\Al Modules\Signature\Signature.BLL\bin\Debug\Signature.BLL.pdb
+F:\BITM Full Final (05-12-2019)\Al Modules\Signature\Signature.BLL\bin\Debug\Signature.Model.dll
+F:\BITM Full Final (05-12-2019)\Al Modules\Signature\Signature.BLL\bin\Debug\Signature.Repository.dll
+F:\BITM Full Final (05-12-2019)\Al Modules\Signature\Signature.BLL\bin\Debug\Signature.DatabaseContext.dll
+F:\BITM Full Final (05-12-2019)\Al Modules\Signature\Signature.BLL\bin\Debug\EntityFramework.dll
+F:\BITM Full Final (05-12-2019)\Al Modules\Signature\Signature.BLL\bin\Debug\Signature.Model.pdb
+F:\BITM Full Final (05-12-2019)\Al Modules\Signature\Signature.BLL\bin\Debug\Signature.Repository.pdb
+F:\BITM Full Final (05-12-2019)\Al Modules\Signature\Signature.BLL\bin\Debug\Signature.Repository.dll.config
+F:\BITM Full Final (05-12-2019)\Al Modules\Signature\Signature.BLL\bin\Debug\Signature.DatabaseContext.pdb
+F:\BITM Full Final (05-12-2019)\Al Modules\Signature\Signature.BLL\bin\Debug\Signature.DatabaseContext.dll.config
+F:\BITM Full Final (05-12-2019)\Al Modules\Signature\Signature.BLL\bin\Debug\EntityFramework.xml
+F:\BITM Full Final (05-12-2019)\Al Modules\Signature\Signature.BLL\obj\Debug\Signature.BLL.csprojAssemblyReference.cache
+F:\BITM Full Final (05-12-2019)\Al Modules\Signature\Signature.BLL\obj\Debug\Signature.BLL.csproj.CoreCompileInputs.cache
+F:\BITM Full Final (05-12-2019)\Al Modules\Signature\Signature.BLL\obj\Debug\Signature.BLL.csproj.CopyComplete
+F:\BITM Full Final (05-12-2019)\Al Modules\Signature\Signature.BLL\obj\Debug\Signature.BLL.dll
+F:\BITM Full Final (05-12-2019)\Al Modules\Signature\Signature.BLL\obj\Debug\Signature.BLL.pdb
+E:\BITM Full Final (05-12-2019)\Al Modules\Signature\Signature.BLL\bin\Debug\Signature.BLL.dll
+E:\BITM Full Final (05-12-2019)\Al Modules\Signature\Signature.BLL\bin\Debug\Signature.BLL.pdb
+E:\BITM Full Final (05-12-2019)\Al Modules\Signature\Signature.BLL\bin\Debug\Signature.Model.dll
+E:\BITM Full Final (05-12-2019)\Al Modules\Signature\Signature.BLL\bin\Debug\Signature.Repository.dll
+E:\BITM Full Final (05-12-2019)\Al Modules\Signature\Signature.BLL\bin\Debug\Signature.DatabaseContext.dll
+E:\BITM Full Final (05-12-2019)\Al Modules\Signature\Signature.BLL\bin\Debug\EntityFramework.dll
+E:\BITM Full Final (05-12-2019)\Al Modules\Signature\Signature.BLL\bin\Debug\Signature.Model.pdb
+E:\BITM Full Final (05-12-2019)\Al Modules\Signature\Signature.BLL\bin\Debug\Signature.Repository.pdb
+E:\BITM Full Final (05-12-2019)\Al Modules\Signature\Signature.BLL\bin\Debug\Signature.Repository.dll.config
+E:\BITM Full Final (05-12-2019)\Al Modules\Signature\Signature.BLL\bin\Debug\Signature.DatabaseContext.pdb
+E:\BITM Full Final (05-12-2019)\Al Modules\Signature\Signature.BLL\bin\Debug\Signature.DatabaseContext.dll.config
+E:\BITM Full Final (05-12-2019)\Al Modules\Signature\Signature.BLL\bin\Debug\EntityFramework.xml
+E:\BITM Full Final (05-12-2019)\Al Modules\Signature\Signature.BLL\obj\Debug\Signature.BLL.csprojAssemblyReference.cache
+E:\BITM Full Final (05-12-2019)\Al Modules\Signature\Signature.BLL\obj\Debug\Signature.BLL.csproj.CoreCompileInputs.cache
+E:\BITM Full Final (05-12-2019)\Al Modules\Signature\Signature.BLL\obj\Debug\Signature.BLL.csproj.CopyComplete
+E:\BITM Full Final (05-12-2019)\Al Modules\Signature\Signature.BLL\obj\Debug\Signature.BLL.dll
+E:\BITM Full Final (05-12-2019)\Al Modules\Signature\Signature.BLL\obj\Debug\Signature.BLL.pdb
+E:\Final Project (Total Modules)\BITM Full Final (10-12-2019)\Al Modules\Signature\Signature.BLL\bin\Debug\Signature.BLL.dll
+E:\Final Project (Total Modules)\BITM Full Final (10-12-2019)\Al Modules\Signature\Signature.BLL\bin\Debug\Signature.BLL.pdb
+E:\Final Project (Total Modules)\BITM Full Final (10-12-2019)\Al Modules\Signature\Signature.BLL\bin\Debug\Signature.Model.dll
+E:\Final Project (Total Modules)\BITM Full Final (10-12-2019)\Al Modules\Signature\Signature.BLL\bin\Debug\Signature.Repository.dll
+E:\Final Project (Total Modules)\BITM Full Final (10-12-2019)\Al Modules\Signature\Signature.BLL\bin\Debug\Signature.DatabaseContext.dll
+E:\Final Project (Total Modules)\BITM Full Final (10-12-2019)\Al Modules\Signature\Signature.BLL\bin\Debug\EntityFramework.dll
+E:\Final Project (Total Modules)\BITM Full Final (10-12-2019)\Al Modules\Signature\Signature.BLL\bin\Debug\Signature.Model.pdb
+E:\Final Project (Total Modules)\BITM Full Final (10-12-2019)\Al Modules\Signature\Signature.BLL\bin\Debug\Signature.Repository.pdb
+E:\Final Project (Total Modules)\BITM Full Final (10-12-2019)\Al Modules\Signature\Signature.BLL\bin\Debug\Signature.Repository.dll.config
+E:\Final Project (Total Modules)\BITM Full Final (10-12-2019)\Al Modules\Signature\Signature.BLL\bin\Debug\Signature.DatabaseContext.pdb
+E:\Final Project (Total Modules)\BITM Full Final (10-12-2019)\Al Modules\Signature\Signature.BLL\bin\Debug\Signature.DatabaseContext.dll.config
+E:\Final Project (Total Modules)\BITM Full Final (10-12-2019)\Al Modules\Signature\Signature.BLL\bin\Debug\EntityFramework.xml
+E:\Final Project (Total Modules)\BITM Full Final (10-12-2019)\Al Modules\Signature\Signature.BLL\obj\Debug\Signature.BLL.csprojAssemblyReference.cache
+E:\Final Project (Total Modules)\BITM Full Final (10-12-2019)\Al Modules\Signature\Signature.BLL\obj\Debug\Signature.BLL.csproj.CoreCompileInputs.cache
+E:\Final Project (Total Modules)\BITM Full Final (10-12-2019)\Al Modules\Signature\Signature.BLL\obj\Debug\Signature.BLL.csproj.CopyComplete
+E:\Final Project (Total Modules)\BITM Full Final (10-12-2019)\Al Modules\Signature\Signature.BLL\obj\Debug\Signature.BLL.dll
+E:\Final Project (Total Modules)\BITM Full Final (10-12-2019)\Al Modules\Signature\Signature.BLL\obj\Debug\Signature.BLL.pdb

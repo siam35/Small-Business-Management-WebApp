@@ -1,0 +1,30 @@
+﻿@model Signature.Models.CategoryViewModel
+<table>
+    <thead>
+        <tr>
+            <td>SL</td>
+            <td>Code</td>
+            <td>Name</td>
+            <td>Edit</td>
+            @*<td>Delete</td>*@
+        </tr>
+    </thead>
+    <tbody>
+        @{int sl = 1;}
+
+        @foreach (var category in Model.Categories)
+        {
+            <tr>
+                <td>@(sl++)</td>
+                <td>@category.Code</td>
+                <td>@category.Name</td>
+                <td>@Html.ActionLink("Edit", "Edit", "Category", new { id = category.Id }, new { @target = "_blank", @class = "btn btn-success btn-default btn-sm" })</td>
+                @*<td>@Html.ActionLink("Delete", "Delete", "Category", new { id = category.Id }, new { @class = "btn btn-danger btn-sm" })</td>*@
+            </tr>
+        }
+
+
+    </tbody>
+</table>
+
+

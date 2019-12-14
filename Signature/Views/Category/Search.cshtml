@@ -1,0 +1,162 @@
+﻿@model Signature.Models.CategoryViewModel
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@*<!DOCTYPE html>
+    <html>
+    <head>
+        <meta name="viewport" content="width=device-width" />
+        <title>Add</title>
+        <style>
+            table {
+                font-family: arial, sans-serif;
+                border-collapse: collapse;
+                width: 100%;
+            }
+
+            td, th {
+                border: 1px solid #dddddd;
+                text-align: left;
+                padding: 8px;
+            }
+
+            tr:nth-child(even) {
+                background-color: #dddddd;
+            }
+        </style>
+    </head>
+    <body>*@
+
+@section MyStyle
+{
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    </style>
+}
+<div>
+    <a href="Add">Add Category</a>
+    <form method="post">
+        Search By:
+        <select id='list'>
+            <option>--Select--</option>
+            <option value="1">Name</option>
+
+            <option value="2">Code</option>
+
+        </select>
+
+
+        <table>
+            <tr id="Searchrow">
+                <td>Search: </td>
+                <td><input type="text"/></td>
+            </tr>
+            @*<tr>
+                    <td><input type="checkbox" id="name" value="Name" checked="checked">Name</td>
+                    <td><input type="checkbox" id="contact" value="Contact">Contact</td>
+                    <td><input type="checkbox" id="email" value="Email">Email</td>
+                </tr>*@
+
+            @*<tr>
+                    <td>Name</td>
+                    <td>
+
+
+                            @Html.TextBoxFor(c => c.Search, Model.Search)
+
+
+                    </td>
+                    <td></td>
+                </tr>*@
+
+            @*<tr id="tr1">
+                    <td>Name</td>
+                    <td><input type="text" name="Name" /></td>
+                    <td></td>
+                </tr>
+
+                <tr id="tr2">
+                    <td>Contact</td>
+                    <td><input type="text" name="Contact" /></td>
+                    <td></td>
+                </tr>
+                <tr id="tr3">
+                    <td>Email</td>
+                    <td><input type="text" name="Email" /></td>
+                    <td></td>
+                </tr>*@
+
+            <tr>
+
+                <td></td>
+                <td><input type="submit" value="Search"/></td>
+                <td>
+                    @if (ViewBag.Message != null)
+                    {
+                        <h3>
+                            <b>
+                                @ViewBag.Message
+                            </b>
+                        </h3>
+                    }
+
+                </td>
+            </tr>
+
+        </table>
+    </form>
+
+    @{
+        Html.RenderPartial("~/Views/Shared/Category/_CategoryDetails.cshtml", Model);
+
+    }
+</div>
+
+@section MyScript
+{
+
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/jquery.validate.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+
+    <script>
+
+
+
+        $(document).ready(function() {
+            $('#list').change(function() {
+                if ($(this).val() === "1") {
+                    $("#Searchrow").empty();
+                    $("#Searchrow").append("<td>Search: </td>");
+                    $("#Searchrow").append(" <td><input type='text' name='Name'/></td>");
+                }
+                if ($(this).val() === "2") {
+                    $("#Searchrow").empty();
+                    $("#Searchrow").append("<td>Search: </td>");
+                    $("#Searchrow").append(" <td><input type='text' name='Code'/></td>");
+                }
+               
+                
+            });
+        });
+    </script>
+
+}
+@*</body>
+    </html>*@
+

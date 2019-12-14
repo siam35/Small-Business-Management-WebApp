@@ -1,0 +1,507 @@
+﻿@model Signature.Models.PurchaseViewModel
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+
+@section MyStyle
+{
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    </style>
+}
+
+
+<div>
+    <h2>Purchase</h2>
+
+    <form method="post">
+        <div>
+            <h2>Purchase Information</h2>
+            <table>
+                <tr>
+                    <td>Date:</td>
+                    <td><input type="date" name="Date" required /></td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td>Bill/Invoice No:</td>
+                    <td><input type="text" name="Bill" id="Bill" required/><p id="feedback"></p></td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td>Supplier:</td>
+                    <td>@Html.DropDownListFor(c => c.SupplierId, Model.SupplierSelectListItems, "--Select--")</td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+
+        <div>
+            <h2>Product</h2>
+            <table>
+                <tr>
+                    <td>Category:</td>
+                    @*<td>@Html.DropDownListFor(c => c.CategoryId, Model.CategorySelectListItems, "--Select--") </td>*@
+                    @*<td><input type="text" id="ProductName" /></td>*@
+                    <td>@Html.DropDownList("Category", null, "--Select--", null)</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Product:</td>
+                    @*<td>@Html.DropDownListFor(c => c.ProductsId, Model.ProductSelectListItems, "--Select--", new { id = "ProductId" }) </td>*@
+                    @*<td><input type="text" id="ProductName" /></td>*@
+                    <td>
+                        <select id="Product" name="ProductId">
+                            <option>--Select--</option>
+                        </select>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Code :</td>
+                    <td><input type="text" id="Code" name="Code" readonly value="<view>" /></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Available Quantity :</td>
+                    <td><input type="text" id="AvailableQuantity" name="AvailableQuantity" readonly value="<view>" /></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Manufactured Date:</td>
+                    <td><input type="date" id="ManufacturedDate" name="ManufacturedDate" required/></td>
+                    <td></td>
+
+                </tr>
+                <tr>
+                    <td>Expire  Date:</td>
+                    <td><input type="date" id="ExpireDate" name="ExpireDate" required/></td>
+                    <td></td>
+
+                </tr>
+                <tr>
+                    <td>Quantity :</td>
+                    <td><input type="text" id="Quantity" name="Quantity" required min="0"/></td>
+                    <td><p id="QuantityFeedback"></p></td>
+                </tr>
+                <tr>
+                    <td>Unit Price (TK) :</td>
+                    <td><input type="text" id="UnitPrice" name="UnitPrice" /></td>
+                    <td><p id="UnitPriceFeedback"></p></td>
+                </tr>
+                <tr>
+                    <td>Total Price (TK) :</td>
+                    <td><input type="text" id="TotalPrice" name="TotalPrice" readonly value="<view>" /></td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td>Previous UnitPrice (TK) :</td>
+                    <td><input type="text" id="PreviousUnitPrice" name="PreviousUnitPrice" readonly value="<view>" /></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Previous MRP (TK) :</td>
+                    <td><input type="text" id="PreviousMRP" name="PreviousMRP" readonly value="<view>"/></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>MRP (TK) :</td>
+                    <td><input type="text" id="MRP" name="MRP" /></td>
+                    <td><p id="MRPFeedback"></p></td>
+                </tr>
+                <tr>
+                    <td>Remarks :</td>
+                    <td><input type="text" id="Remarks" name="Remarks" /></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="button" id="add" value="Add" /></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <table id="tb1">
+
+                <thead>
+                    <tr>
+                        <td>Sl</td>
+                        <td>Product(Code)</td>
+                        <td>Manufactured Date</td>
+                        <td>Expire Date</td>
+                        <td>Quantity</td>
+                        <td>Unit Price (TK) </td>
+                        <td>Total Price (TK) </td>
+                        <td>MRP (TK) </td>
+                        <td>Remarks</td>
+                    </tr>
+                </thead>
+                <tbody id="PurchaseDetailsTable">
+                    @*<tr>
+                            <td>Sl</td>
+                            <td>Subject</td>
+                            <td>Marks</td>
+                        </tr>*@
+                </tbody>
+
+            </table>
+
+        </div>
+        <table>
+            <tr>
+                <td><input type="submit" value="Submit" /></td>
+                <td>
+                    @if (ViewBag.Message != null)
+                    {
+                        <h3>
+                            <b>
+                                @ViewBag.Message
+                            </b>
+                        </h3>
+                    }
+
+                </td>
+            </tr>
+
+            <tr>
+                <a href="Show">Show Details</a>
+            </tr>
+        </table>
+
+    </form>
+</div>
+
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<script>
+
+    $(document).ready(function () {
+        var index = 0;
+        var quantity = 0;
+        var unitprice = 0;
+
+
+        $("#Quantity").focusout(function() {
+            if (parseInt($("#Quantity").val())<1) {
+              //  alert("Minimum Quantity should be 1");
+              $("#QuantityFeedback").html("Minimum Quantity should be 1");
+                $("#Quantity").val(null);
+             
+            } else {
+                $("#QuantityFeedback").html("");
+            }
+
+        });
+        $("#UnitPrice").focusout(function() {
+            if (parseInt($("#UnitPrice").val())<0) {
+                //  alert("Minimum Quantity should be 1");
+                $("#UnitPriceFeedback").html("Only Positive number allowed");
+                $("#UnitPrice").val(null);
+                $("#TotalPrice").val(null);
+                $("#MRP").val(null);
+             
+            } else {
+                $("#UnitPriceFeedback").html("");
+            }
+
+        });
+
+        $("#MRP").focusout(function() {
+            if (parseInt($("#MRP").val())<0) {
+                //  alert("Minimum Quantity should be 1");
+                $("#MRPFeedback").html("Only Positive number allowed");
+                $("#MRP").val(null);
+                $("#UnitPrice").val(null);
+             
+            } else {
+                $("#MRPFeedback").html("");
+            }
+
+        });
+
+        $("#Bill").focusout(function() {
+            var bill = $("#Bill").val();
+            var jsonRequestData = { bill: bill }
+            $.ajax({
+                url: "/Purchase/IsBillExist",
+                type: "POST",
+                data: jsonRequestData,
+                success: function (data) {
+                    if (data === true) {
+                        //alert("Bill exist");
+                        $("#feedback").html("This bill no already Exist");
+                        $("#Bill").val(null);
+                    } else {
+                      //  alert("Not Exist");
+                      $("#feedback").html("");
+                    }
+
+                },
+                error: function () {
+                    alert("Ajax failed");
+                }
+            });
+        });
+
+        $("#Product").change(function () {
+            var productId = $("#Product").val();
+            var jsonRequestData = { productId: productId }
+            $.ajax({
+                url: "/Purchase/GetCodeByProductId",
+                type: "POST",
+                data: jsonRequestData,
+                success: function (code) {
+                    $("#Code").val(code);
+
+                },
+                error: function () {
+                    alert("Ajax failed");
+                }
+            });
+        });
+
+        $("#Category").change(function () {
+            $("#PreviousUnitPrice").val(null);
+            $("#PreviousMRP").val(null);
+            $("#Code").val(null);
+            var categoryId = $("#Category").val();
+            var jsonRequestData = { categoryId: categoryId };
+
+            $.ajax({
+                url: "/Purchase/GetProductByCategoryId",
+                type: "POST",
+                data: jsonRequestData,
+                success: function (products) {
+                    $("#Product").empty();
+                    $("#Product").append('<option>--Select--</option>');
+                    $.each(products, function (key, value) {
+                        //  alert("Id: "+ value.Id + "Name: "+value.Name);
+                        $("#Product").append('<option value="' + value.Id + '">' + value.Name + '</option>');
+                    });
+                },
+                error: function () {
+                    alert("Ajax failed");
+                }
+            });
+        });
+
+        $("#Product").change(function () {
+            $("#PreviousMRP").val(null);
+            var productId = $("#Product").val();
+            var jsonRequestData = { productId: productId };
+
+            $.ajax({
+                url: "/Purchase/GetPreviousMrpByProductId",
+                type: "POST",
+                data: jsonRequestData,
+                success: function (previousMrp) {
+                    $("#PreviousMRP").val(previousMrp);
+                },
+                error: function () {
+                    $("#PreviousMRP").val(0);
+                }
+            });
+        });
+
+        $("#Product").change(function () {
+            $("#PreviousUnitPrice").val(null);
+            var productId = $("#Product").val();
+            var jsonRequestData = { productId: productId };
+
+            $.ajax({
+                url: "/Purchase/GetPreviousUnitPriceByProductId",
+                type: "POST",
+                data: jsonRequestData,
+                success: function (previousUnitPrice) {
+                    $("#PreviousUnitPrice").val(previousUnitPrice);
+                },
+                error: function () {
+                    $("#PreviousUnitPrice").val(0);
+                }
+            });
+        });
+
+        $("#Quantity").keyup(function () {
+
+            if (!isNullOrEmpty($("#Quantity").val())) {
+                quantity = parseInt($("#Quantity").val());
+            } else {
+                quantity = 0;
+            }
+
+
+            if (!isNullOrEmpty($("#UnitPrice").val())) {
+                unitprice = parseInt($("#UnitPrice").val());
+            } else {
+                unitprice = 0;
+            }
+
+            $("#TotalPrice").val(quantity * unitprice);
+        });
+        $("#UnitPrice").keyup(function () {
+
+            if (!isNullOrEmpty($("#Quantity").val())) {
+                quantity = parseInt($("#Quantity").val());
+            }
+            else {
+                quantity = 0;
+            }
+
+
+            if (!isNullOrEmpty($("#UnitPrice").val())) {
+                unitprice = parseInt($("#UnitPrice").val());
+            }
+            else {
+                unitprice = 0;
+
+            }
+
+            $("#TotalPrice").val(quantity * unitprice);
+        });
+
+        //Start MRP Calculation
+        $("#Quantity").keyup(function () {
+
+            if (!isNullOrEmpty($("#UnitPrice").val())) {
+                unitprice = parseInt($("#UnitPrice").val());
+            }
+            else {
+                unitprice = 0;
+            }
+
+            $("#MRP").val(unitprice + ((25 * unitprice) / 100));
+        });
+        $("#UnitPrice").keyup(function () {
+
+            if (!isNullOrEmpty($("#UnitPrice").val())) {
+                unitprice = parseInt($("#UnitPrice").val());
+            }
+            else {
+                unitprice = 0;
+            }
+
+            $("#MRP").val(unitprice + ((25 * unitprice) / 100));
+        });
+        //End MRP Calculation
+
+        function isNullOrEmpty(data) {
+            if (data === undefined || data === "" || isNaN(data)) {
+                return true;
+            }
+            return false;
+
+        }
+
+        $('#add').click(function () {
+            var purchase = GetPurchaseData();
+
+            var resultRow = GerPurchaseRow(purchase);
+
+            $("#PurchaseDetailsTable").append(resultRow);
+
+            index++;
+        });
+
+        $("#Product").change(function () {
+            var productId = $("#Product").val();
+            var jsonRequestData = { productId: productId }
+            $.ajax({
+                url: "/Purchase/PurchaseAvailableQuantity",
+                type: "POST",
+                data: jsonRequestData,
+                success: function (availableQuantity) {
+                    $("#AvailableQuantity").val(availableQuantity);
+
+                },
+                error: function () {
+                    alert("Ajax failed");
+                }
+            });
+        });
+
+        function GetPurchaseData() {
+            var code = $('#Code').val();
+            var product = $('#Product').val();
+            var productName = $('#Product option:selected').text();
+            var codeproduct = productName + "(" + code + ")";
+            var manufactureddate = $('#ManufacturedDate').val();
+            var expiredate = $('#ExpireDate').val();
+            var quantity = $('#Quantity').val();
+            var unitprice = $('#UnitPrice').val();
+            var totalprice = $('#TotalPrice').val();
+            var mrp = $('#MRP').val();
+            var remarks = $('#Remarks').val();
+
+            return { Product: product, CodeProduct: codeproduct, ManufacturedDate: manufactureddate, ExpireDate: expiredate, Quantity: quantity, UnitPrice: unitprice, TotalPrice: totalprice, MRP: mrp, Remarks: remarks }
+        }
+
+        var sl = index;
+
+        //$("#tb1").on('click', '.remove', function () {
+        //    $(this).closest('tr').remove();
+        //    index--;
+        //    sl--;
+        //});
+
+        function GerPurchaseRow(purchase) {
+
+            //Database directly
+            var productHidden = "<input type='hidden' name='PurchasesDetailses[" + index + "].ProductId' value='" + purchase.Product + "'></div>";
+            var manufactureddateHidden = "<input type='hidden' name='PurchasesDetailses[" + index + "].ManufacturedDate' value='" + purchase.ManufacturedDate + "'></div>";
+            var expiredateHidden = "<input type='hidden' name='PurchasesDetailses[" + index + "].ExpireDate' value='" + purchase.ExpireDate + "'></div>";
+            var quantityHidden = "<input type='hidden' name='PurchasesDetailses[" + index + "].Quantity' value='" + purchase.Quantity + "'></div>";
+            var unitpriceHidden = "<input type='hidden' name='PurchasesDetailses[" + index + "].UnitPrice' value='" + purchase.UnitPrice + "'></div>";
+            var totalpriceHidden = "<input type='hidden' name='PurchasesDetailses[" + index + "].TotalPrice' value='" + purchase.TotalPrice + "'></div>";
+            var mrpHidden = "<input type='hidden' name='PurchasesDetailses[" + index + "].MRP' value='" + purchase.MRP + "'></div>";
+            var remarksHidden = "<input type='hidden' name='PurchasesDetailses[" + index + "].Remarks' value='" + purchase.Remarks + "'></div>";
+
+            //For Add only in list
+            var startTr = "<tr>";
+            var slCell = "<td class='text-success'>" + (++sl) + "</td>";
+            var productCell = "<td class='text-success'>" + productHidden + purchase.CodeProduct + "</td>";
+            var manufactureddateCell = "<td class='text-success'>" + manufactureddateHidden + purchase.ManufacturedDate + "</td>";
+            var expiredateCell = "<td class='text-success'>" + expiredateHidden + purchase.ExpireDate + "</td>";
+            var quantityCell = "<td class='text-success'>" + quantityHidden + purchase.Quantity + "</td>";
+            var unitpriceCell = "<td class='text-success'>" + unitpriceHidden + purchase.UnitPrice + "</td>";
+            var totalpriceCell = "<td class='text-success'>" + totalpriceHidden + purchase.TotalPrice + "</td>";
+            var mrpCell = "<td class='text-success'>" + mrpHidden + purchase.MRP + "</td>";
+            var remarksCell = "<td class='text-success'>" + remarksHidden + purchase.Remarks + "</td>";
+
+            var endTr = "</tr>";
+
+            return (startTr + slCell + productCell + manufactureddateCell + expiredateCell + quantityCell + unitpriceCell + totalpriceCell + mrpCell + remarksCell /*+ "<td><input type='button' class='remove' value='Delete'/></td>"*/ + endTr);
+        }
+
+
+    });
+
+</script>
+
+@section MyScript
+{
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/jquery.validate.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+}
+@*</body>
+    </html>*@
+

@@ -1,0 +1,558 @@
+﻿@model Signature.Models.SalesViewModel
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+
+@*<!DOCTYPE html>
+
+    <html>
+    <head>
+        <meta name="viewport" content="width=device-width" />
+        <title>Add</title>
+        <style>
+            table {
+                font-family: arial, sans-serif;
+                border-collapse: collapse;
+                width: 100%;
+            }
+
+            td, th {
+                border: 1px solid #dddddd;
+                text-align: left;
+                padding: 8px;
+            }
+
+            tr:nth-child(even) {
+                background-color: #dddddd;
+            }
+        </style>
+    </head>
+    <body>*@
+
+@section MyStyle
+{
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    </style>
+}
+
+
+<div>
+    <h2>Sales</h2>
+
+    <form method="post">
+        <div>
+            <h2>Sales Information</h2>
+            <table>
+                <tr>
+                    <td>Customer:</td>
+                    <td>@Html.DropDownListFor(c => c.CustomerId, Model.CustomerSelectListItems, "--Select--", new { id = "Customer" })</td>
+
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Date:</td>
+                    <td><input type="date" name="Date" required /></td>
+                    <td></td>
+
+                </tr>
+                <tr>
+                    <td>Loyality Point:</td>
+                    <td><input type="text" id="LoyalityPoint" readonly value="<view>" /></td>
+                    <td><input type="hidden" id="ReorderLevel" /></td>
+                </tr>
+            </table>
+        </div>
+        
+        <div>
+            <h2>Product</h2>
+            <table>
+                <tr>
+                    <td>Category:</td>
+                    @*<td>@Html.DropDownListFor(c=>c.CategoryId,Model.CategorySelectListItems,"--Select--") </td>*@
+                    @*<td><input type="text" id="ProductName" /></td>*@
+
+                    <td>@Html.DropDownList("Category", null, "--Select--", null)</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Product:</td>
+                    @*<td>@Html.DropDownListFor(c => c.ProductId, Model.ProductSelectListItems, "--Select--", new {id = "ProductId"}) </td>*@
+                    @*<td><input type="text" id="ProductName" /></td>*@
+                    <td>
+                        <select id="Product" name="ProductId">
+                            <option>--Select--</option>
+                        </select>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Available Quantity :</td>
+                    <td><input type="text" id="AvailableQuantity" readonly value="<view>" /></td>
+
+                    <td></td>
+                </tr>
+                @*<tr>
+                    <td>Total Quantity :</td>
+                    <td><input type="text" id="TotalQuantity" value="0" /></td>
+
+                    <td></td>
+                </tr>*@
+                <tr>
+                    <td>Quantity :</td>
+                    <td><input type="text" id="Quantity" required /></td>
+
+                    <td><p id="QuantityFeedback1"></p><p id="QuantityFeedback2"></p><p id="QuantityFeedback3"></p></td>
+                  
+                </tr>
+                <tr>
+                    <td>MRP (TK) :</td>
+                    <td><input type="text" id="MRP" required /></td>
+
+                    <td><p id="MRPFeedback"></p></td>
+                </tr>
+                <tr>
+                    <td>Total MRP (TK) :</td>
+                    <td><input type="text" id="TotalMRP" readonly value="<view>" /></td>
+
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="button" id="add" value="Add" /></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <table id="tb1">
+
+                <thead>
+                    <tr>
+                        <td>Sl</td>
+                        <td>Product</td>
+                        <td>Quantity</td>
+                        <td>MRP (TK) </td>
+                        <td>Total MRP (TK) </td>
+                    </tr>
+                </thead>
+                <tbody id="SalesDetailsTable">
+                    @*<tr>
+                            <td>Sl</td>
+                            <td>Subject</td>
+                            <td>Marks</td>
+                        </tr>*@
+                </tbody>
+
+            </table>
+
+        </div>
+        <table>
+            <tr>
+                <td><input type="submit" id="submit" value="Submit" /></td>
+                <td>
+                    @if (ViewBag.Message != null)
+                    {
+                        <h3>
+                            <b>
+                                @ViewBag.Message
+                            </b>
+                        </h3>
+                    }
+
+                </td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td>Grand Total (TK) : </td>
+                <td><input type="text" id="GrandTotal" readonly value="<view>" /></td>
+            </tr>
+            <tr>
+                <td>Discount(%) </td>
+                <td><input type="text" id="Discountpercentage" readonly value="<view>" /></td>
+            </tr>
+            <tr>
+                <td>Discount Amount(TK): </td>
+                <td><input type="text" id="DiscountAmount" readonly value="<view>" /></td>
+    
+            </tr>
+            <tr>
+                <td>Payable Amount(TK): </td>
+                <td><input type="text" id="PayableAmount" readonly value="<view>" /></td>
+            </tr>
+            <tr>
+                <a href="Show">Show Details</a>
+            </tr>
+        </table>
+            
+    </form>
+
+</div>
+
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<script>
+
+    $(document).ready(function () {
+        var index = 0;
+        var quantity = 0;
+        var mrp = 0;
+
+        $("#Quantity").focusout(function() {
+            if (parseInt($("#Quantity").val())<1) {
+                //  alert("Minimum Quantity should be 1");
+                $("#QuantityFeedback1").html("Minimum Quantity should be 1");
+                $("#Quantity").val(null);
+                $("#TotalMRP").val(null);
+            } else {
+                $("#QuantityFeedback1").html("");
+            }
+            if (parseInt($("#Quantity").val()) > parseInt($("#AvailableQuantity").val()) ) {
+                $("#QuantityFeedback2").html("You don't have enough stock");
+                $("#Quantity").val(null);
+                $("#TotalMRP").val(null);
+            } 
+            else {
+                $("#QuantityFeedback2").html("");
+            }
+
+            if ((parseInt($("#AvailableQuantity").val())) - parseInt($("#Quantity").val()) < parseInt($("#ReorderLevel").val())) {
+                $("#QuantityFeedback3").html("Warning: The Quantity will be under reorderlevel");
+            
+            } else {
+                $("#QuantityFeedback3").html("");
+            }
+
+        });
+
+
+        $("#MRP").focusout(function () {
+            if (parseInt($("#MRP").val()) < 0) {
+                //  alert("Minimum Quantity should be 1");
+                $("#MRPFeedback").html("Only Positive number allowed");
+                $("#MRP").val(null);
+                $("#TotalMRP").val(null);
+             
+
+            } else {
+                $("#MRPFeedback").html("");
+            }
+
+        });
+
+        $("#Customer").change(function () {
+       
+
+            var customerId = $("#Customer").val();
+            var jsonRequestData = { customerId: customerId }
+            $.ajax({
+                url: "/Sales/GetLoyalityPointByCustomerId",
+                type: "POST",
+                data: jsonRequestData,
+                success: function (loyalitypoint) {
+                    $("#LoyalityPoint").val(loyalitypoint);
+                    var percent = parseInt((GetDiscountPercentageValue()));
+                    $("#Discountpercentage").val(percent);
+                },
+                error: function () {
+                    alert("Ajax failed");
+                }
+            });
+        });
+
+        $("#Category").change(function () {
+            $("#MRP").val(null);
+            var categoryId = $("#Category").val();
+            var jsonRequestData = { categoryId: categoryId };
+
+            $.ajax({
+                url: "/Sales/GetProductByCategoryId",
+                type: "POST",
+                data: jsonRequestData,
+                success: function (products) {
+                    $("#Product").empty();
+                    $("#Product").append('<option>--Select--</option>');
+                    $.each(products, function (key, value) {
+                        //  alert("Id: "+ value.Id + "Name: "+value.Name);
+                        $("#Product").append('<option value="' + value.Id + '">' + value.Name + '</option>');
+                    });
+                },
+                error: function () {
+                    alert("Ajax failed");
+                }
+            });
+        });
+
+        $("#Product").change(function () {
+            $("#MRP").val(null);
+            var productId = $("#Product").val();
+            var jsonRequestData = { productId: productId };
+
+            $.ajax({
+                url: "/Sales/GetMrpByProductId",
+                type: "POST",
+                data: jsonRequestData,
+                success: function (MRP) {
+                    $("#MRP").val(MRP);
+                },
+                error: function () {
+                  //  $("#MRP").val(0);
+                }
+            });
+        });
+
+        $("#Product").change(function () {
+            
+            var productId = $("#Product").val();
+            var jsonRequestData = { productId: productId };
+
+            $.ajax({
+                url: "/Sales/GetRorderLevelByProductId",
+                type: "POST",
+                data: jsonRequestData,
+                success: function (reorderLevel) {
+                    $("#ReorderLevel").val(reorderLevel);
+                },
+                error: function () {
+                    //  $("#MRP").val(0);
+                }
+            });
+        });
+
+        $("#Quantity").keyup(function () {
+
+            if (!isNullOrEmpty($("#Quantity").val())) {
+                quantity = parseInt($("#Quantity").val());
+            } else {
+                quantity = 0;
+            }
+
+
+            if (!isNullOrEmpty($("#MRP").val())) {
+                mrp = parseInt($("#MRP").val());
+            } else {
+                mrp = 0;
+            }
+
+            $("#TotalMRP").val(quantity * mrp);
+        });
+
+        $("#MRP").keyup(function () {
+
+            if (!isNullOrEmpty($("#Quantity").val())) {
+                quantity = parseInt($("#Quantity").val());
+            }
+            else {
+                quantity = 0;
+            }
+
+
+            if (!isNullOrEmpty($("#MRP").val())) {
+                mrp = parseInt($("#MRP").val());
+            }
+            else {
+                mrp = 0;
+
+            }
+
+            $("#TotalMRP").val(quantity * mrp);
+        });
+
+
+        function isNullOrEmpty(data) {
+            if (data === undefined || data === "" || isNaN(data)) {
+                return true;
+            }
+            return false;
+
+        }
+        $('#add').click(function () {
+            $("#QuantityFeedback1").html("");
+            $("#QuantityFeedback2").html("");
+            $("#QuantityFeedback3").html("");
+
+
+
+            var sales = GetSalesData();
+
+            var resultRow = GetSalesRow(sales);
+
+            $("#SalesDetailsTable").append(resultRow);
+
+            var sum = parseInt((GetCellValues()));
+            $("#GrandTotal").val(sum);
+            //var percent = parseInt((GetDiscountPercentageValue()));
+            //$("#Discountpercentage").val(percent);
+            var amount = parseInt((GetDiscountAmountValue()));
+            $("#DiscountAmount").val(amount);
+            var payableamount = parseInt((GetPayableAmountValue()));
+            $("#PayableAmount").val(payableamount);
+            //var q = parseInt((GetCellQuantityValues()));
+            //$("#TotalQuantity").val(q);
+            index++;
+        });
+
+        $('#submit').click(function () {
+
+            var grandTotal = $("#GrandTotal").val();
+            var customerId = $("#Customer").val();
+
+            var jsonRequesData = { grandTotal: grandTotal, customerId: customerId };
+
+            $.ajax({
+                url: "/Sales/UpdateLoyalityPoint",
+                type: "POST",
+                data: jsonRequesData,
+                success: function (data) {
+
+                },
+                error: function () {
+                    alert("Ajax Requiest Error");
+                }
+            });
+        });
+
+        $("#Product").change(function () {
+            var productId = $("#Product").val();
+            var jsonRequestData = { productId: productId }
+            $.ajax({
+                url: "/Sales/SalesAvailableQuantity",
+                type: "POST",
+                data: jsonRequestData,
+                success: function (availableQuantity) {
+                    $("#AvailableQuantity").val(availableQuantity);
+
+                },
+                error: function () {
+                    alert("Ajax failed");
+                }
+            });
+        });
+
+        function GetSalesData() {
+
+            var product = $('#Product').val();
+            var productName = $('#Product option:selected').text();
+            var quantity = $('#Quantity').val();
+            var mrp = $('#MRP').val();
+
+            return { Product: product, Quantity: quantity, MRP: mrp, ProductName: productName }
+        }
+
+        var sl = index;
+        function GetSalesRow(sales) {
+
+            var productHidden = "<input type='hidden' name='SalesDetailses[" + index + "].ProductId' value='" + sales.Product + "'></div>";
+            var quantityHidden = "<input type='hidden' name='SalesDetailses[" + index + "].Quantity' value='" + sales.Quantity + "'></div>";
+            var mrpHidden = "<input type='hidden' name='SalesDetailses[" + index + "].MRP' value='" + sales.MRP + "'></div>";
+            // var marksHidden = "<input type='hidden' name='ResultDetailses[" + index + "].Marks' value='" + result.Marks + "'></div>";
+
+            var startTr = "<tr>";
+            var slCell = "<td class='text-success'>" + (++sl) + "</td>";
+            var subjectCell = "<td class='text-success'>" + productHidden + sales.ProductName + "</td>";
+            var quantityCell = "<td class='text-success'>" + quantityHidden + sales.Quantity + "</td>";
+            var mrpCell = "<td class='text-success'>" + mrpHidden + sales.MRP + "</td>";
+            var tmrpCell = "<td class='text-success'>" + $("#TotalMRP").val() + "</td>";
+
+            // var totalmrp = "<td class='text-success'>"  + (mrpCell*quantityCell) + "</td>";
+            var endTr = "</tr>";
+
+            return (startTr + slCell + subjectCell + quantityCell + mrpCell + tmrpCell + endTr);
+        }
+
+
+
+      //  var table = document.getElementById('tb1');
+        //$("#tb1").on('click', '.remove', function () {
+        //    $(this).closest('tr').remove();
+
+
+        //    var sum = parseInt((GetCellValues()));
+        //    $("#GrandTotal").val(sum);
+        //    var percent = parseInt((GetDiscountPercentageValue()));
+        //    $("#Discountpercentage").val(percent);
+        //    var amount = parseInt((GetDiscountAmountValue()));
+        //    $("#DiscountAmount").val(amount);
+        //    var payableamount = parseInt((GetPayableAmountValue()));
+        //    $("#PayableAmount").val(payableamount);
+
+        //    sl--;
+        //    //index--;
+
+
+        //});
+
+
+
+
+
+        function GetCellValues() {
+            var table = document.getElementById('tb1');
+            var sum = 0.0;
+
+            var n = table.rows.length;
+
+            for (var r = 1; r < n; r++) {
+
+                var singleValue = (table.rows[r].cells[4].innerText);
+
+                sum = sum + parseFloat(singleValue);
+            }
+
+            return sum;
+        }
+
+        //function GetCellQuantityValues() {
+        //    var table = document.getElementById('tb1');
+        //    var q = 0;
+
+        //    var n = table.rows.length;
+
+        //    for (var r = 1; r < n; r++) {
+
+        //        var singleValue = (table.rows[r].cells[2].innerText);
+
+        //        q = q + parseInt(singleValue);
+        //    }
+
+        //    return q;
+        //}
+
+
+
+        function GetDiscountPercentageValue() {
+            var percent = $("#LoyalityPoint").val() / 10;
+            return percent;
+        }
+
+        function GetDiscountAmountValue() {
+            var amount = ($("#GrandTotal").val() * ($("#Discountpercentage").val() / 100));
+            return amount;
+        }
+        function GetPayableAmountValue() {
+            var payableamount = $("#GrandTotal").val() - $("#DiscountAmount").val();
+            return payableamount;
+        }
+
+    });
+</script>
+
+@*</body>
+    </html>*@
+

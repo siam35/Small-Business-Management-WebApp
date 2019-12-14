@@ -1,0 +1,37 @@
+﻿@model Signature.Models.CustomerViewModel
+<table>
+    <thead>
+        <tr>
+            <td>SL</td>
+            <td>Code</td>
+            <td>Name</td>
+            <td>Address</td>
+            <td>Contact</td>
+            <td>Email</td>
+            <td>LoyalityPoint</td>
+            <td>Edit</td>
+            @*<td>Delete</td>*@
+        </tr>
+    </thead>
+    <tbody>
+        @{int sl = 1;}
+
+        @foreach (var customer in Model.Customers)
+        {
+            <tr>
+                <td>@(sl++)</td>
+                <td>@customer.Code</td>
+                <td>@customer.Name</td>
+                <td>@customer.Address</td>
+                <td>@customer.Contact</td>
+                <td>@customer.Email</td>
+                <td>@customer.LoyalityPoint</td>
+                <td>@Html.ActionLink("Edit", "Edit", "Customer", new { id = customer.Id }, new { @target = "_blank", @class = "btn btn-success btn-default btn-sm" })</td>
+                @*<td>@Html.ActionLink("Delete", "Delete", "Customer", new { id = customer.Id }, new { @class = "btn btn-danger btn-sm" })</td>*@
+            </tr>
+        }
+
+
+    </tbody>
+</table>
+

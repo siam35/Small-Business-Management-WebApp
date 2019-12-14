@@ -1,0 +1,104 @@
+﻿@model Signature.Models.ProductViewModel
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Add</h2>
+
+@section MyStyle
+{
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    </style>
+}
+
+<div>
+    <a href="Search">Search Product</a>
+    <form method="post">
+        <table>
+            <tr>
+                <td>@Html.LabelFor(c => c.CategoryId)</td>
+                <td>@Html.DropDownListFor(c => c.CategoryId, Model.CategorySelectListItems, "--Select--",new{id="Category"})</td>
+                <td>@Html.ValidationMessageFor(c=>c.CategoryId)</td>
+            </tr>
+            <tr>
+                <td>@Html.LabelFor(c => c.Code)</td>
+                <td>@Html.TextBoxFor(c => c.Code, Model.Code)</td>
+                <td>@Html.ValidationMessageFor(c => c.Code)</td>
+            </tr>
+            <tr>
+                <td>@Html.LabelFor(c => c.Name)</td>
+                <td>@Html.TextBoxFor(c => c.Name, Model.Name)</td>
+                <td>@Html.ValidationMessageFor(c => c.Name)</td>
+            </tr>
+            <tr>
+                <td>@Html.LabelFor(c => c.ReorderLevel)</td>
+                <td>@Html.TextBoxFor(c => c.ReorderLevel, Model.ReorderLevel)</td>
+                <td>@Html.ValidationMessageFor(c => c.ReorderLevel)</td>
+            </tr>
+            <tr>
+                <td>@Html.LabelFor(c => c.Description)</td>
+                <td>@Html.TextBoxFor(c => c.Description, Model.Description)</td>
+                <td>@Html.ValidationMessageFor(c => c.Description)</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" value="Save" id="Save"/></td>
+                <td>
+                    @if (ViewBag.Message != null)
+                    {
+                        <h3>
+                            <b>
+                                @ViewBag.Message
+                            </b>
+                        </h3>
+                    }
+                </td>
+            </tr>
+        </table>
+
+        @*For View*@
+        @{
+            Html.RenderPartial("~/Views/Shared/Product/_ProductDetails.cshtml", Model);
+        }
+
+    </form>
+</div>
+
+@section MyScript
+{
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/jquery.validate.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+    
+    @*<script>
+        $(document).ready(function() {
+           // alert("working");
+            $("#Save").click(function() {
+                if ($("#Category").text("--Select--")) {
+                   alert("Select a category please");
+                  
+                }
+            });
+        });
+    </script>*@
+}
+
+@*</body>
+    </html>*@
+
+

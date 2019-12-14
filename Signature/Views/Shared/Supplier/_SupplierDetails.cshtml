@@ -1,0 +1,37 @@
+﻿@model Signature.Models.SupplierViewModel
+<table>
+    <thead>
+    <tr>
+        <td>SL</td>
+        <td>Code</td>
+        <td>Name</td>
+        <td>Address</td>
+        <td>Contact</td>
+        <td>Email</td>
+        <td>Contact Person</td>
+        <td>Edit</td>
+        @*<td>Delete</td>*@
+    </tr>
+    </thead>
+    <tbody>
+    @{int sl = 1;}
+
+    @foreach (var supplier in Model.suppliers)
+    {
+        <tr>
+            <td>@(sl++)</td>
+            <td>@supplier.Code</td>
+            <td>@supplier.Name</td>
+            <td>@supplier.Address</td>
+            <td>@supplier.Contact</td>
+            <td>@supplier.Email</td>
+            <td>@supplier.ContactPerson</td>
+            <td>@Html.ActionLink("Edit", "Edit", "Supplier", new { id = supplier.Id }, new { @target = "_blank", @class = "btn btn-success btn-default btn-sm" })</td>
+            @*<td>@Html.ActionLink("Delete", "Delete", "Supplier", new { id = supplier.Id }, new { @class = "btn btn-danger btn-sm" })</td>*@
+        </tr>
+    }
+
+
+    </tbody>
+</table>
+

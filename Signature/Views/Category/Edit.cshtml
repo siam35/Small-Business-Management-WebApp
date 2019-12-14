@@ -1,0 +1,169 @@
+﻿@model Signature.Models.CategoryViewModel
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@*<!DOCTYPE html>
+
+    <html>
+    <head>
+        <meta name="viewport" content="width=device-width" />
+        <title>Add</title>
+        <style>
+            table {
+                font-family: arial, sans-serif;
+                border-collapse: collapse;
+                width: 100%;
+            }
+
+            td, th {
+                border: 1px solid #dddddd;
+                text-align: left;
+                padding: 8px;
+            }
+
+            tr:nth-child(even) {
+                background-color: #dddddd;
+            }
+        </style>
+    </head>
+    <body>*@
+
+@section MyStyle
+{
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    </style>
+}
+<div>
+    <a href="../Search">Search Category</a>
+    <a href="../Add">Add Category</a>
+    <form method="post">
+        <table>
+            <tr>
+                <td>@Html.LabelFor(c => c.Code)</td>
+                <td><input type="text" name="Code" id="Code" value="@Model.Code" required maxlength="4" minlength="4"/>
+                    <p id="codefeedback"></p></td>
+                @*<td>@Html.TextBoxFor(c => c.Code, Model.Code)</td>*@
+                <td>@Html.ValidationMessageFor(c => c.Code)</td>
+            </tr>
+
+            <tr>
+                <td>@Html.LabelFor(c => c.Name)</td>
+                <td><input type="text" name="Name" id="Name" value="@Model.Name" required/>
+                    <p id="namefeedback"></p></td>
+                <p><input type="hidden" name="Id" id="Id" value="@Model.Id" required/></p>
+                @*<td>@Html.TextBoxFor(c => c.Name, Model.Name)</td>*@
+                <td>@Html.ValidationMessageFor(c => c.Name)</td>
+            </tr>
+
+            <tr>
+
+                <td></td>
+                <td><input type="submit" value="Update"/></td>
+                <td>
+                    @if (ViewBag.Message != null)
+                    {
+                        <h3>
+                            <b>
+                                @ViewBag.Message
+                            </b>
+                        </h3>
+                    }
+
+                </td>
+            </tr>
+
+        </table>
+    </form>
+
+    @{
+        Html.RenderPartial("~/Views/Shared/Category/_CategoryDetails.cshtml", Model);
+
+    }
+</div>
+
+@section MyScript
+{
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/jquery.validate.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+    
+    <script>
+
+      
+
+
+        $(document).ready(function() {
+            
+            $("#Code").focusout(function() {
+                var code = $("#Code").val();
+                var id = $("#Id").val();
+                var jsonRequestData = { code: code, id: id }
+                $.ajax({
+                    url: "/Category/IsCodeExistforEdit",
+                    type: "POST",
+                    data: jsonRequestData,
+                    success: function (data) {
+                        if (data === true) {
+                            //alert("Bill exist");
+                            $("#codefeedback").html("This Code already Exist");
+                            $("#Code").val(null);
+                        } else {
+                            //  alert("Not Exist");
+                            $("#codefeedback").html("");
+                        }
+
+                    },
+                    error: function () {
+                        alert("Ajax failed");
+                    }
+                });
+            });
+
+            $("#Name").focusout(function() {
+                var name = $("#Name").val();
+                var id = $("#Id").val();
+                var jsonRequestData = { name: name, id: id }
+                $.ajax({
+                    url: "/Category/IsNameExistforEdit",
+                    type: "POST",
+                    data: jsonRequestData,
+                    success: function (data) {
+                        if (data === true) {
+                            //alert("Bill exist");
+                            $("#namefeedback").html("This Name already Exist");
+                            $("#Name").val(null);
+                        } else {
+                            //  alert("Not Exist");
+                            $("#namefeedback").html("");
+                        }
+
+                    },
+                    error: function () {
+                        alert("Ajax failed");
+                    }
+                });
+            });
+        });
+    </script>
+}
+
+
+@* </body>
+    </html>*@
+

@@ -1,0 +1,75 @@
+﻿@model Signature.Models.SalesViewModel
+@{
+    ViewBag.Title = "Show";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section MyStyle
+{
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    </style>
+}
+
+ 
+
+
+
+<form method="post">
+    <table>
+        <tr>
+            Search:<td><input type="date" name="StartDateTime" required /></td>
+            <td><input type="date" name="EndDateTime" required/></td>
+            <td><input type="submit" value="Search"/></td>
+        </tr>
+    </table>
+    
+</form>
+
+<h2>Sales</h2>
+<table>
+    <tr>
+        <td>Sl</td>
+        <td>Date</td>
+        <td>Customer</td>
+        <td>Details</td>
+
+
+    </tr>
+
+    @{int i = 1;}
+    @foreach (var sales in Model.Salses)
+    {
+        <tr>
+            <td>@(i++)</td>
+            <td>@sales.Date</td>
+            <td>@sales.Customer.Name</td>
+            <td>@Html.ActionLink("Details", "ShowSalesDetails", "Sales", new { id = sales.Id }, new { @target = "_blank", @class = "btn btn-success btn-default btn-sm" })</td>
+          
+         
+        </tr>
+    }
+</table>
+@section MyScript
+{
+
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    
+
+}
+
+
